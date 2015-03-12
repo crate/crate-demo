@@ -1,6 +1,8 @@
-# crate-demo
+# Public Crate Demos
 
-**Public Crate Demos**
+Available Demos:
 
+- Amplab Sampledata
+- play.crate.io
 
 
