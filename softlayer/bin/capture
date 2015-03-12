@@ -1,0 +1,26 @@
+#!/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python
+
+import os
+
+join = os.path.join
+base = os.path.dirname(os.path.abspath(os.path.realpath(__file__)))
+base = os.path.dirname(base)
+
+import sys
+sys.path[0:0] = [
+  '/Users/christian/.buildout/eggs/Fabric-1.8.3-py2.7.egg',
+  '/Users/christian/.buildout/eggs/setuptools-5.4.1-py2.7.egg',
+  '/Users/christian/.buildout/eggs/crate-0.10.2-py2.7.egg',
+  '/Users/christian/.buildout/eggs/six-1.7.3-py2.7.egg',
+  '/Users/christian/.buildout/eggs/urllib3-1.9-py2.7.egg',
+  '/Users/christian/.buildout/eggs/paramiko-1.12.4-py2.7.egg',
+  '/Users/christian/.buildout/eggs/ecdsa-0.11-py2.7.egg',
+  '/Users/christian/.buildout/eggs/pycrypto-2.6.1-py2.7-macosx-10.9-x86_64.egg',
+  ]
+
+sys.argv.extend(['-f', join(base, 'capture.py')])
+
+import fabric.main
+
+if __name__ == '__main__':
+    sys.exit(fabric.main.main())

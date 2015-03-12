@@ -1,0 +1,12 @@
+#!/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python
+
+import sys
+sys.path[0:0] = [
+  '/Users/christian/.buildout/eggs/setuptools-5.3-py2.7.egg',
+  '/Users/christian/.buildout/eggs/zc.buildout-2.2.1-py2.7.egg',
+  ]
+
+import zc.buildout.buildout
+
+if __name__ == '__main__':
+    sys.exit(zc.buildout.buildout.main())

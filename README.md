@@ -7,6 +7,7 @@ Available Demos:
 - Locus Load Test on GCE
 - TNW Amsterdam
 - play.crate.io
+- Softlayer Amplab Benchmark
 - Wikipedia
 - Wikipedia History
 
