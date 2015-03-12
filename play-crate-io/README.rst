@@ -1,0 +1,92 @@
+=============
+play.crate.io
+=============
+
+Setup Cluster
+-------------
+
+This setup requires `Google Cloud SDK`_ to be installed!
+
+Network/Firewall
+................
+
+Docs: `GCE Networking`_
+
+Create a new network named ``play`` (or likewise)::
+
+  $ gcloud compute networks create play
+
+Allow internal traffic between instances, use IPv4 range from the
+``gcloud compute networks list`` command for the ``--source-ranges`` parameter::
+
+  $ gcloud compute firewall-rules create internal \
+      --network play \
+      --source-ranges 10.240.0.0/16 \
+      --allow tcp udp icmp
+
+Allow SSH connections and web traffic from everywhere::
+
+  $ gcloud compute firewall-rules create web \
+      --network play \
+      --source-ranges 0.0.0.0/32 \
+      --allow tcp:22 tcp:80
+
+Disks
+.....
+
+Docs: `GCE Disks`_
+
+Create ``8`` SSD disks::
+
+  $ gcloud compute disks create ssh-play{1..8} \
+      --project crate-gce \
+      --type pd-ssd \
+      --zone us-central1-a \
+      --size 50GB
+
+
+Instances
+.........
+
+Docs: `GCE Instances`_
+
+**For each unique cluster you will need to update the ``cloud-config.yaml``
+with a new discovery token that can be generated from `https://discovery.etcd.io/new`_.**
+
+Launch ``8`` instances of type ``n1-standard-8`` (``8`` cores, ``30GB`` RAM)
+with the given ``cloud-config.yml``::
+
+  $ gcloud compute instances create play{1..8} \
+      --project crate-gce \
+      --machine-type n1-standard-8 \
+      --image coreos \
+      --zone us-central1-a \
+      --network play \
+      --disk name=... \
+      --boot-disk-size 10GB \
+      --metadata-from-file user-data=cloud-config.yaml
+
+Install Crate
+-------------
+
+Upload service file (``crate.service``) to one of the nodes.
+
+Since it is a global service, you can simply run ``fleetctl start``::
+
+  $ fleetctl start crate.service
+
+
+Update Cluster
+--------------
+
+Restarting automatically pulls the latest version from Docker::
+
+  $ fleetctl stop crate.service
+  $ fleetctl start crate.service
+
+
+.. _`Google Cloud SDK`: https://cloud.google.com/sdk/
+.. _`GCE Networking`: https://cloud.google.com/compute/docs/networking
+.. _`GCE Instances`: https://cloud.google.com/compute/docs/instances
+.. _`GCE Disks`: https://cloud.google.com/compute/docs/disks
+
