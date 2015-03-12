@@ -7,5 +7,7 @@ Available Demos:
 - Locus Load Test on GCE
 - TNW Amsterdam
 - play.crate.io
+- Wikipedia
+- Wikipedia History
 
 

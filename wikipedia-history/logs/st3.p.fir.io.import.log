@@ -1,0 +1,4461 @@
+enwiki-latest-pages-meta-history12
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history12/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 48414,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabr",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabp",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabo",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabs",
+      "successes" : 47654,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001825001p001939818.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history12
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history12/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 55687,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabt",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabv",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabu",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabr",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabp",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabo",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabx",
+      "successes" : 37248,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabs",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p001939820p002049744.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history12
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history12/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 48146,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabp",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabo",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabq",
+      "successes" : 63530,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002049746p002172695.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history12
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history12/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 29938,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaba",
+      "successes" : 53490,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002172696p002234301.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history12
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history12/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 26159,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaaw",
+      "successes" : 52085,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002234302p002296318.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history12
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history12/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 27702,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaay",
+      "successes" : 39228,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002296320p002364241.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history12
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history12/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 24226,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaau",
+      "successes" : 92960,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history12.xml-p002364243p002425000.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history18
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history18/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 39980,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabm",
+      "successes" : 69227,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007525002p007819615.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history18
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history18/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 44233,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabp",
+      "successes" : 57577,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabo",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p007819619p008157631.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history18
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history18/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 45264,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabn",
+      "successes" : 82247,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008157632p008492634.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history18
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history18/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 42445,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aabj",
+      "successes" : 95900,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008492635p008781048.bz2/json.aaao",
+      "successes" : 80008,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history18
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history18/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 48981,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabp",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabo",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabq",
+      "successes" : 93821,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p008781049p009119240.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history18
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history18/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 13929,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaal",
+      "successes" : 42497,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history18.xml-p009119241p009225000.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history24
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history24/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 45485,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabp",
+      "successes" : 14532,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabo",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p020925002p021401901.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history24
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history24/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 45066,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabr",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabp",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabo",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabs",
+      "successes" : 11698,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021401902p021971964.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history24
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history24/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 54515,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabt",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabv",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabu",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabr",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabp",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabw",
+      "successes" : 23305,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabo",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabs",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p021971965p022620069.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history24
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history24/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 49903,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabr",
+      "successes" : 89093,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabp",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabo",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p022620070p023215684.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history24
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history24/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 46172,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabk",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabi",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabl",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabm",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabo",
+      "successes" : 75267,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabn",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aabh",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history24.xml-p023215685p023725000.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history6
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history6/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 26522,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaaz",
+      "successes" : 58546,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000185003p000199292.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history6
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history6/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 30828,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aabd",
+      "successes" : 45734,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000199294p000217231.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history6
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history6/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 34713,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aabg",
+      "successes" : 22275,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000217232p000239098.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history6
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history6/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 31760,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aabf",
+      "successes" : 52883,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000239099p000261059.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history6
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history6/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 36131,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaaz",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aabd",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aabb",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aabg",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aabe",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aabc",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaax",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaaw",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaba",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aabf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaay",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aabh",
+      "successes" : 56690,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000261061p000290164.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}enwiki-latest-pages-meta-history6
+/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/
+http://localhost:9200/enwiki-latest-pages-meta-history6/default/_import?pretty
+{
+  "imports" : [ {
+    "node_id" : "EYyrI5RGRveYbX7rRvt_5Q",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "e20fxn-3QYSCRjEQqvR9gA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "vqAqXpJFQ-Glz_MlOBB7Aw",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "n0R06ZcPSLmXDDwqWEkLaA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "PW5_QtncTm6chBJ_X14NzA",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "nrYYJp7qROaanT8g0-jO9w",
+    "took" : 24495,
+    "imported_files" : [ {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaal",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/started",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaab",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaak",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaar",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaai",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaae",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/ended",
+      "successes" : 0,
+      "failures" : 1
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaas",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaau",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaan",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaah",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaap",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaam",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaag",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaat",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaaq",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaac",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaad",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaaa",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaaf",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaav",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaaw",
+      "successes" : 83676,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaaj",
+      "successes" : 100000,
+      "failures" : 0
+    }, {
+      "file_name" : "/mnt/data21/wikipedia_history/json/enwiki-latest-pages-meta-history6.xml-p000290165p000305000.bz2/json.aaao",
+      "successes" : 100000,
+      "failures" : 0
+    } ]
+  }, {
+    "node_id" : "mJMGJlxeT2G4H_4m3DdX-g",
+    "took" : 0,
+    "imported_files" : [ ]
+  }, {
+    "node_id" : "CJJFa8maQH-nx14ynOtsjA",
+    "took" : 0,
+    "imported_files" : [ ]
+  } ]
+}
