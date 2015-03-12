@@ -1,0 +1,10 @@
+*.py[co]
+.Python
+develop-eggs/
+*.egg-info/
+*bin/
+*parts/
+gce-locust/locust/include/
+gce-locust/locust/lib/
+.DS_Store
+.installed.cfg
