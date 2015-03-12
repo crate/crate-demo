@@ -1,0 +1,38 @@
+[Unit]
+Description=crate
+After=docker.service
+Requires=docker.service
+
+[Service]
+TimeoutSec=3600
+ExecStartPre=/bin/bash -c "/usr/bin/docker rm %p || exit 0"
+ExecStartPre=/usr/bin/mkdir -p /mnt/data1/crate
+ExecStartPre=/usr/bin/docker pull crate:latest
+
+ExecStart=/bin/bash -c '\
+    HOSTS=$(fleetctl list-machines --fields=ip --no-legend \
+                | sed "s/$/:4300/" \
+                | paste -s -d","); \
+    /usr/bin/docker run \
+        --name %p \
+        --publish 4200:4200 \
+        --publish 4300:4300 \
+        --volume /mnt/data1/crate:/data \
+        --volume /tmp:/tmp \
+        --env CRATE_HEAP_SIZE=16g \
+        crate:latest \
+        /crate/bin/crate \
+        -Des.cluster.name=gce \
+        -Des.indices.store.throttle.max_bytes_per_sec=100mb \
+        -Des.indices.memory.index_buffer_size=30% \
+        -Des.indices.recovery.concurrent_streams=5 \
+        -Des.indices.recovery.max_bytes_per_sec=100mb \
+        -Des.multicast.enabled=false \
+        -Des.network.publish_host=%H \
+        -Des.discovery.zen.ping.unicast.hosts=$HOSTS'
+
+ExecStop=/usr/bin/docker stop %p
+ExecStop=/usr/bin/docker rm %p
+
+[X-Fleet]
+Global=true

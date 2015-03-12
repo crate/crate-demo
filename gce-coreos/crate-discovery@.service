@@ -1,0 +1,15 @@
+[Unit]
+Description=Crate discovery service
+BindsTo=crate@%i.service
+
+[Service]
+ExecStart=/bin/bash -c "\
+    while true; do \
+        etcdctl set /services/crate/%H '{\"http\": 4200, \"transport\": 4300 }' --ttl 60; \
+        sleep 45; \
+    done";
+
+ExecStop=/usr/bin/etcdctl rm /services/crate/%H
+
+[X-Fleet]
+X-ConditionMachineOf=crate@%i.service
