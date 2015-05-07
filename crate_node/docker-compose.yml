@@ -1,0 +1,12 @@
+crate:
+  image: crate
+  ports:
+    - "4200:4200"
+    - "4300:4300"
+
+node:
+  build: .
+  ports:
+    - "8000:8000"
+  links:
+    - crate
