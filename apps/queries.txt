@@ -1,0 +1,3 @@
+curl -sSXPOST http://st01p.aws.fir.io:4200/_sql?pretty -d '{ "stmt": "SELECT sum(num_steps) AS steps_for_user FROM steps WHERE username = 'gosinski'" }'
+
+curl -sSXPOST 'http://st01p.aws.fir.io:4200/_sql?pretty' -d- '{"stmt": "SELECT date_trunc('day', ts), sum(num_steps) FROM steps WHERE username = $1 AND month_partition = $2 GROUP BY 1","args": ["gosinski","201409"]}'
