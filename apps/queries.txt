@@ -1,3 +1,18 @@
-curl -sSXPOST http://st01p.aws.fir.io:4200/_sql?pretty -d '{ "stmt": "SELECT sum(num_steps) AS steps_for_user FROM steps WHERE username = 'gosinski'" }'
+curl -sSXPOST http://st01p.aws.fir.io:4200/_sql?pretty -d '{\"stmt\": \"SELECT sum(num_steps) AS steps_for_user FROM steps WHERE username = 'gosinski'\" }'
 
-curl -sSXPOST 'http://st01p.aws.fir.io:4200/_sql?pretty' -d- '{"stmt": "SELECT date_trunc('day', ts), sum(num_steps) FROM steps WHERE username = $1 AND month_partition = $2 GROUP BY 1","args": ["gosinski","201409"]}'
+
+curl -sSXPOST http://st01p.aws.fir.io:4200/_sql?pretty -d '{\"stmt\": \"SELECT date_trunc('day', ts), sum(num_steps) FROM steps WHERE username = 'gosinksi' AND month_partition = 201409 GROUP BY 1\"}'
+
+curl -sSXPOST 'http://st01p.aws.fir.io:4200/_sql?pretty' -d@- <<- EOF
+{"stmt":"SELECT date_trunc('day', ts), sum(num_steps) FROM steps WHERE username = \$1 AND month_partition = \$2 GROUP BY 1","args": ["gosinski","201409"]}
+EOF
+
+sh$ curl -sSXPOST '127.0.0.1:4200/_sql?pretty' -d@- <<- EOF
+... {"stmt":
+...     "select date,position from locations
+...     where date <= \$1 and position < \$2 order by position",
+...  "args": ["1979-10-12", 3]
+... }
+... EOF
+
+curl -XPOST 'http://st01p.aws.fir.io:4200/_sql?pretty' -d '{\"stmt\": \"select date_trunc('day', ts) from steps limit 100\",\"args\": []}'
