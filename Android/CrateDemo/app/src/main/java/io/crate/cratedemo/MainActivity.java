@@ -5,7 +5,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -18,47 +20,63 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class MainActivity extends ActionBarActivity {
+    ListView list;
+    ArrayList<HashMap<String, String>> stepslist = new ArrayList<HashMap<String, String>>();
+
+    String url = "http://st01p.aws.fir.io:4200/_sql?pretty";
+
+    private static final String TAG_STEPSROW = "rows";
+    private static final String TAG_STEPS = "steps";
+    private static final String TAG_DATE = "date";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        TextView mTxtDisplay;
-//        ImageView mImageView;
-//
-//        mTxtDisplay = (TextView) findViewById(R.id.txtDisplay);
+        stepslist = new ArrayList<HashMap<String, String>>();
+
         RequestQueue queue = Volley.newRequestQueue(this);
 
-        String url = "http://st01p.aws.fir.io:4200/_sql?pretty";
+
         JSONObject params = new JSONObject();
         try {
             params.put("stmt", "SELECT date_trunc('day', ts), sum(num_steps) FROM steps WHERE username = 'gosinski' AND month_partition = '201409' GROUP BY 1 limit 100");
+        } catch (JSONException e) {
         }
-        catch(JSONException e){}
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
                 (Request.Method.POST, url, params, new Response.Listener<JSONObject>() {
 
                     @Override
                     public void onResponse(JSONObject response) {
-                        //mTxtDisplay.setText("Response: " + response.toString());
-                        Log.v("TAG",response.toString());
                         try {
-//                            JSONObject obj = new JSONObject(response);
-                            JSONArray m_jArry = response.getJSONArray("rows");
-                            String[] rowsArray = new String[m_jArry.length()];
-                            Log.v("TAG ",m_jArry.toString());
+                            JSONArray stepentries = response.getJSONArray(TAG_STEPSROW);
+                            for (int i = 0; i < stepentries.length(); i++) {
+                                JSONArray stepentry = stepentries.getJSONArray(i);
+                                String date = stepentry.getString(0);
+                                String steps = stepentry.getString(1);
+                                HashMap<String, String> map = new HashMap<String, String>();
 
-                            for (int i = 0; i < m_jArry.length(); i++) {
-                                TextView greetingIdText = (TextView) findViewById(R.id.id_value);
-                                TextView greetingContentText = (TextView) findViewById(R.id.content_value);
-                                greetingIdText.setText(greeting.getId());
-                                greetingContentText.setText(greeting.getContent());
+                                map.put(TAG_DATE, date);
+                                map.put(TAG_STEPS, steps);
+
+                                stepslist.add(map);
+                                list = (ListView) findViewById(R.id.list);
+
+                                ListAdapter adapter = new SimpleAdapter(MainActivity.this, stepslist,
+                                        R.layout.list,
+                                        new String[]{TAG_DATE, TAG_STEPS}, new int[]{
+                                        R.id.date, R.id.steps});
+
+                                list.setAdapter(adapter);
+
                             }
-//                            Globals g = Globals.getInstance();
-//                            g.setData(answersArray);
+
 
                         } catch (Exception ex) {
                             Log.e("log_tag", "Error getJSON " + ex.toString());
@@ -74,9 +92,6 @@ public class MainActivity extends ActionBarActivity {
                     }
                 });
         queue.add(jsObjRequest);
-
-// Access the RequestQueue through your singleton class.
-        //MySingleton.getInstance(this).addToRequestQueue(jsObjRequest);
 
     }
 
