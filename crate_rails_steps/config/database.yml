@@ -1,0 +1,4 @@
+development:
+   adapter: crate
+   host: st01p.aws.fir.io
+   port: 4200
