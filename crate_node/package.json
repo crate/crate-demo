@@ -1,0 +1,8 @@
+{
+  "name": "NodeStepsTracker",
+  "version": "0.0.1",
+  "dependencies":
+  {
+    "cratejs":"0.2.13"
+  }
+}
