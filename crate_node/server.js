@@ -5,7 +5,7 @@
 var Crate = require('cratejs');
 
 var db = module.exports = new Crate({
-  host: '192.168.59.103',
+  host: 'st01p.aws.fir.io',
   port: 4200,
   /* Optional manual clustering
   cluster: [
@@ -17,12 +17,26 @@ var db = module.exports = new Crate({
 */
 });
 
-var findTweets = db.Select('tweets')
-.columns(['id', 'text'])
-.limit(100)
-.order('id', 'asc');
+var findSteps = db.Select('steps')
+.columns(['num_steps'])
+.where({
+  username: 'gosinski',
+  month_partition: '201409'
+})
+.limit(100);
 
-findTweets.run(function(err, res) {
+findSteps.run(function(err, res) {
+  if (err) {
+    console.log(err);
+  }
+  else {
+    if (res) {
+      console.log(res);
+    }
+  }
+});
+
+db.execute("SELECT date_trunc('day', ts), sum(num_steps) FROM steps WHERE username = ? AND month_partition = ? GROUP BY 1", ['gosinski', '201409'], function(err, res) {
   if (err) {
     console.log(err);
   }
