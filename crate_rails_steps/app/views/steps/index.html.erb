@@ -1,0 +1,21 @@
+<h1>Listing Steps</h1>
+
+<table>
+  <tr>
+    <th>TBC</th>
+    <th>TBC</th>
+    <th></th>
+  </tr>
+
+  <% @steps.each do |step| %>
+  <tr>
+    <td>
+      <%= step.inspect %>
+    </td>
+    <td>xx</td>
+    <td>
+      <%= link_to 'Show Step', step_path(step) %>
+    </td>
+  </tr>
+  <% end %>
+</table>
