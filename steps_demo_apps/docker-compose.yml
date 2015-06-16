@@ -1,0 +1,20 @@
+crate:
+  image: crate
+  ports:
+    - "4200:4200"
+    - "4300:4300"
+
+node:
+  build: ../crate_node/
+  ports:
+    - "8888:8888"
+  links:
+    - crate
+
+python:
+  build: ../crate_python/
+  command: python increment.py
+  # ports:
+  #   - "8000:8000"
+  links:
+    - crate
