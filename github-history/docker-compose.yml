@@ -1,0 +1,35 @@
+crate1:
+  image: crate
+  ports:
+    - "4200:4200"
+    - "4300:4300"
+  volumes:
+    - ./data:/importdata
+crate2:
+  image: crate
+  volumes:
+    - ./data:/importdata
+crate3:
+  image: crate
+  volumes:
+    - ./data:/importdata
+laravelcomposer:
+  image: dylanlindgren/docker-laravel-composer
+  volumes:
+    # TODO: Is this really necessary?
+    - /Users/chrisward/Workspace/crate-demo/github-history/crate-laravel:/var/www
+  command: --working-dir=/var/www install
+  links:
+    # - laravelartisan
+    - crate1
+laravelartisan:
+  image: dylanlindgren/docker-laravel-artisan
+  links:
+    - crate1
+  volumes_from:
+    - laravelcomposer
+  working_dir: /var/www
+  command: serve --host=0.0.0.0:8080
+  ports:
+    - "8000:8000"
+    - "8080:8080"
