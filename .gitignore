@@ -8,3 +8,4 @@ gce-locust/locust/include/
 gce-locust/locust/lib/
 .DS_Store
 .installed.cfg
+github-history/data/
