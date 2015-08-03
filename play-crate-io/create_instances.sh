@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ZONE="us-central1-b"
-PROJECT="<PROJECT_ID>"
+PROJECT="crate-gce"
 NETWORK="play"
 
 for i in {1..8}

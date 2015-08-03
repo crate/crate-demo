@@ -6,14 +6,12 @@ Requires=docker.service
 [Service]
 TimeoutSec=3600
 ExecStartPre=/usr/bin/mkdir -p /mnt/data1/crate
-ExecStartPre=/usr/bin/docker pull crate:latest
-
 ExecStart=/bin/bash -c '\
     HOSTS=$(fleetctl list-machines --fields=ip --no-legend \
                 | sed "s/$/:4300/" \
                 | paste -s -d","); \
     /usr/bin/docker run \
-        --publish 4200:4200 \
+        --publish 80:4200 \
         --publish 4300:4300 \
         --volume /mnt/data1/crate:/data \
         --volume /tmp:/tmp \
@@ -21,8 +19,8 @@ ExecStart=/bin/bash -c '\
         crate:latest \
         /bin/bash -c "\
             apt-get update && apt-get install git -y && \
-            cd /crate/plugins/crate-admin/_site && \
-            wget wget https://gist.githubusercontent.com/jodok/b3424770352178d8c653/raw/a97f29f1cf18978ca0daa2656a9b14b50835ccb6/ga.patch && \
+            cd /crate && \
+            wget https://gist.githubusercontent.com/jodok/b3424770352178d8c653/raw/a97f29f1cf18978ca0daa2656a9b14b50835ccb6/ga.patch && \
             git apply ga.patch && \
             /crate/bin/crate \
               -Des.cluster.name=play-crate-io \
@@ -30,8 +28,11 @@ ExecStart=/bin/bash -c '\
               -Des.indices.memory.index_buffer_size=30% \
               -Des.indices.recovery.concurrent_streams=5 \
               -Des.indices.recovery.max_bytes_per_sec=200mb \
-              -Des.multicast.enabled=false \
               -Des.network.publish_host=%H \
+              -Des.discovery.zen.ping.multicast.enabled=false \
+              -Des.gateway.recover_after_nodes=8 \
+              -Des.gateway.recover_after_time=5m \
+              -Des.gateway.expected_nodes=8 \
               -Des.discovery.zen.ping.unicast.hosts=$HOSTS"'
 
 ExecStop=/usr/bin/docker stop %p
