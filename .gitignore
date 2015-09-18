@@ -9,3 +9,5 @@ gce-locust/locust/lib/
 .DS_Store
 .installed.cfg
 github-history/data/
+
+bower_components
