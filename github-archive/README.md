@@ -1,5 +1,5 @@
 # Github Archive on AWS
-This document describes how a Crate cluster can be setup to present how Crate 
+This document describes how a Crate cluster can be setup to present how Crate
 analyses [Github Archive Data](https://www.githubarchive.org/).
 
 ## Bootstrapping
@@ -18,3 +18,12 @@ bin/aws credentials
 
 Set Default region name to ``us-west-2`` and leave the default output format at
 ``None``.
+
+# Querying & visualization of the data via the WebApp
+The web application provides queries and a corresponding visualization of the
+data provided with Crate. Requires ```npm``` to work.
+
+```cd webapp
+npm install
+npm start
+´´´
