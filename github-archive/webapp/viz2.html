@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Crate Github Demo</title>
+  <meta name="description" content="Visualizing Github Archive data using Crate">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.min.css" />
+  <!-- font import -->
+  <link rel="stylesheet" href="/css/crate.fonts.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="/css/crate.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="/css/crate.components.css" />
+  <style>
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  .bar {
+    fill: steelblue;
+  }
+
+  .x.axis path {
+    display: none;
+  }
+  text, #result {
+    font-size: 11px;
+  }
+
+  .d3-tip {
+    font-size: 11px;
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+  }
+
+  /* Creates a small triangle extender for the tooltip */
+  .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+  }
+
+  /* Style northward tooltips differently */
+  .d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="header wrapper wrapper-border">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            <img src="/images/logo_2x.png" alt="crate.io" style="height:36px;" />
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="#">Github Archive Demo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main">
+    <!-- body -->
+    <div class="wrapper wrapper-border">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Commit Sentiments</h1>
+            <h4>Points out user sentiments of Github commits compared by their emotional impacts like anger and joy.</h4>
+            <div class="">
+              <div id="viz"></div>
+              <div id="result"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="">
+              <pre id="query1"><code>SELECT date_format('%Y-%m', date_trunc('month', created_at)) AS date,
+  count(*) AS cnt_pos
+FROM github
+WHERE match(payload_ft, 'yes hallelujah hurray bingo  amused cheerful excited glad proud')
+  AND TYPE = 'PushEvent'
+  AND (created_at >= '2013-01-01' AND created_at <= '2013-12-31')
+GROUP BY date
+ORDER BY date ASC</code></pre>
+              <pre id="query2"><code>SELECT date_format('%Y-%m', date_trunc('month', created_at)) AS date,
+  count(*) AS cnt_neg
+FROM github
+WHERE match(payload_ft, 'argh angry annoyed annoying appalled bitter cranky hate hating mad')
+  AND TYPE = 'PushEvent'
+  AND (created_at >= '2013-01-01' AND created_at <= '2013-12-31')
+GROUP BY date
+ORDER BY date ASC</code></pre>
+              <p><a href="#" class="btn btn-default btn-small" id="btn-viz2">SHOW</a> <span id="loader"><i class="fa fa-spinner fa-pulse"></i></span></p>
+              <p id="error" class=""></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3>Visualisations</h3>
+            <table class="table">
+              <tr>
+                <td><a href="/index.html">Overview</a></td>
+              </tr>
+              <tr>
+                <td><a href="/viz0.html">Pull Request Languages</a></td>
+              </tr>
+              <tr>
+                <td><a href="/viz1.html">Pull Request Latencies</a></td>
+              </tr>
+              <tr>
+                <td><a href="/viz2.html">Commit Sentiments</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="wrapper">
+    <div class="footer"></div>
+  </footer>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/bower_components/d3/d3.min.js"></script>
+  <script src="/bower_components/d3-tip/index.js"></script>
+
+  <script src="/js/sql.js"></script>
+  <script src="/js/viz2.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

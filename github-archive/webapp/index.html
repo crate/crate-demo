@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Crate Github Demo</title>
+  <meta name="description" content="Visualizing Github Archive data using Crate">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.min.css" />
+  <!-- font import -->
+  <link rel="stylesheet" href="/css/crate.fonts.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="/css/crate.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="/css/crate.components.css" />
+</head>
+
+<body>
+
+  <header class="header wrapper wrapper-border">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            <img src="/images/logo_2x.png" alt="crate.io" style="height:36px;" />
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="#">Github Archive Demo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main">
+    <!-- body -->
+    <div class="wrapper wrapper-border">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Github Data Visualisation</h1>
+            <p>Querying <a href="http://githubarchive.org">Github archive data</a> using <a href="https://crate.io">Crate.io</a>.<p>
+            <div class="" style="margin-top:20px;">
+              <h2>Pull Request Languages</h2>
+              <p><img src="/images/vis1.png" class="img img-responsive" /></p>
+              <p><a href="/viz0.html">Show Visualisation</a></p>
+
+              <h2>Pull Request Latency</h2>
+              <p><img src="/images/vis2.png" class="img img-responsive" /></p>
+              <p><a href="/viz1.html">Show Visualisation</a></p>
+
+              <h2>Commit Sentiments</h2>
+              <p><img src="/images/vis3.png" class="img img-responsive" /></p>
+              <p><a href="/viz2.html">Show Visualisation</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="wrapper">
+    <div class="footer">
+      <center class="small">&copy; 2015 Crate Technology GmbH</center>
+    </div>
+  </footer>
+
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

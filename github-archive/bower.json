@@ -1,0 +1,11 @@
+{
+  "name": "github-archive-demo",
+  "description": "Crate demo for visualizing data from githubarchive.org",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "components-font-awesome": "~4.4.0",
+    "d3": "~3.5.6",
+    "d3-tip": "~0.6.7",
+    "jquery": "~2.1.4"
+  }
+}
