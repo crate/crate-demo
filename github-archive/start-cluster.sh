@@ -23,7 +23,7 @@ INSTANCE_IDS=$(bin/aws ec2 run-instances \
 --instance-type $2 \
 --key-name $3 \
 --user-data $(base64 user-data.sh) \
---block-device-mappings "[{\"DeviceName\": \"/dev/sdc\",\"VirtualName\":\"ephemeral1\"}]" \
+--block-device-mappings "[{\"DeviceName\":\"/dev/sdb\",\"VirtualName\":\"ephemeral0\"},{\"DeviceName\":\"/dev/sdc\",\"VirtualName\":\"ephemeral1\"}]" \
 | jq ".Instances[].InstanceId" | tr -d '"')
 
 echo "Instances launched"
