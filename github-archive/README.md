@@ -27,3 +27,18 @@ data provided with Crate. Requires ```npm``` to work.
 npm install
 npm start
 ´´´
+
+# Prepare AWS Credentials for importing data
+
+Provide credentials:
+
+```sh
+  export AWS_ACCESS_KEY_ID='...'
+  export AWS_SECRET_ACCESS_KEY='...'
+```
+
+Import data from s3 to the Crate cluster:
+
+```sh
+bin/imp --start 2011/8 --end 2011/10 --host localhost:4200
+```
