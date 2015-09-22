@@ -49,7 +49,10 @@ Insert your AWS credentials ``__AWS_ACCESS_KEY_ID__`` and
 appropriate fields. 
 
 
-## Querying & visualization of the data via the WebApp
+## Data queries
+
+
+## Visualization of the data via the WebApp
 The web application provides queries and a corresponding visualization of the
 data provided with Crate. Requires ```npm``` to work.
 
@@ -59,12 +62,7 @@ npm install
 npm start
 ```
 
-## Prepare AWS Credentials for importing data
-
-Provide credentials:
-
-
-
+## Importing data
 Import data from s3 to the Crate cluster:
 
 ```sh
