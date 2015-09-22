@@ -11,11 +11,11 @@ def delta_month(date, months):
     return date + timedelta(months*365/12)
 
 def parse_args():
-  parser = argparse.ArgumentParser()
-  parser.add_argument('-s','--start', help='start date', required=True)
-  parser.add_argument('-e','--end', help='end date', required=True)
-  parser.add_argument('-host','--host', help='host', required=True)
-  return parser.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-s','--start', help='start date', required=True)
+    parser.add_argument('-e','--end', help='end date', required=True)
+    parser.add_argument('-host','--host', help='host', required=True)
+    return parser.parse_args()
 
 def main():
   aws_secret_key = os.environ['AWS_SECRET_ACCESS_KEY']
@@ -34,11 +34,15 @@ def main():
     month_partition = single_date.strftime("%Y-%m");
 
     print('Importing github data for {0} ...'.format(import_data))
-    s3_url = 's3://{0}:{1}:@crate.sampledata/github/{2}-*'.format(quote_plus(aws_access_key),
-      quote_plus(aws_secret_key), import_data)
-    cur.execute("""COPY github PARTITION (month_partition=?)
-      FROM ? WITH (bulk_size=1000, compression='gzip')""",
-      (month_partition, s3_url))
+    s3_url = 's3://{0}:{1}@crate.sampledata/github/{2}-*'.format(quote_plus(aws_access_key),
+        quote_plus(aws_secret_key), import_data)
+    query = "COPY github PARTITION (month_partition='{0}') FROM '{1}' WITH (bulk_size=1000, compression='gzip')" \
+        .format(month_partition, s3_url)
+    cur.execute(query)
 
 if __name__=='__main__':
-  main()
+    try:
+        main()
+    except: 
+        print('error while copying')
+  
