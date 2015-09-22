@@ -1,30 +1,18 @@
 CREATE TABLE github (
     type STRING,
-    public BOOLEAN,
-    payload OBJECT(ignored),
-    repo OBJECT(dynamic) AS (
-        id INTEGER,
-        name STRING,
-        url STRING
+    payload OBJECT AS(
+      commits OBJECT AS (
+        message STRING
+      )
     ),
-    actor OBJECT(dynamic) AS (
-        id INTEGER,
-        login STRING,
-        gravatar_id STRING,
-        avatar_url STRING,
-        url STRING
-    ),
-    org OBJECT(dynamic) AS (
-        id INTEGER,
-        login STRING,
-        gravatar_id STRING,
-        avatar_url STRING,
-        url STRING
-    ),
+    repo OBJECT,
+    actor OBJECT,
+    org OBJECT,
     created_at TIMESTAMP,
     month_partition STRING,
-    id STRING
-    )
-    PARTITIONED BY (month_partition)
+    id STRING,
+    public BOOLEAN,
+    INDEX commit_comment_ft using fulltext(payload['commits']['message']) with (analyzer = 'english')
+    ) PARTITIONED BY (month_partition)
     WITH (number_of_replicas=0,
             refresh_interval=0);
