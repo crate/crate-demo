@@ -12,11 +12,17 @@ if [[ -z "$2" ]] ; then
   exit 1
 fi
 
+INSTANCE_TYPE="c3.4xlarge"
+SECURITY_GROUP="github-demo"
+REGION="us-west-2"
+
 INSTANCE_IDS=$(bin/aws ec2 run-instances \
---image-id ami-358ba442 \
+--image-id ami-2b7c651b \
 --count $CountInstances \
---instance-type c3.4xlarge \
+--instance-type $INSTANCE_TYPE \
 --key-name $2 \
+--security-groups $SECURITY_GROUP \
+--region $REGION \
 --user-data $(base64 user-data.sh) \
 --block-device-mappings "[{\"DeviceName\":\"/dev/sdb\",\"VirtualName\":\"ephemeral0\"},{\"DeviceName\":\"/dev/sdc\",\"VirtualName\":\"ephemeral1\"}]" \
 | jq ".Instances[].InstanceId" | tr -d '"')

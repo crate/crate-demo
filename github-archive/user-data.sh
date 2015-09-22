@@ -2,7 +2,7 @@
 
 NUM_NODES=16
 CLUSTER_NAME="crate-github-demo"
-GROUP="cluster-github"
+GROUP="github-demo"
 QUORUM=$(($NUM_NODES/2+1))
 
 echo "
@@ -12,7 +12,7 @@ export CRATE_HEAP_SIZE=15g
 " >> /etc/sysconfig/crate
 
 echo "
-cluster.name: crate-$NUM_NODES
+cluster.name: $CLUSTER_NAME
 index.store.type: mmapfs
 indices:
   store:
@@ -23,13 +23,10 @@ indices:
     concurrent_streams: 5
   memory:
     index_buffer_size: 30%
-discovery.zen.ping.multicast.enabled: false
-discovery:
-  type: ec2
-  zen:
-    minimum_master_nodes: $QUORUM
-  ec2:
-    groups: $GROUP
+
+discovery.ec2.groups: $GROUP
+discovery.zen.minimum_master_nodes: $QUORUM
+
 http.cors.enabled: true
 insert_by_query.request_timeout: 2m
 gateway:
