@@ -1,13 +1,15 @@
 #!/bin/bash
 
-NUM_NODES=16
-CLUSTER_NAME="crate-github-demo"
+NUM_NODES=__NUM_NODES__
+CLUSTER_NAME="crate-github-demo-$NUM_NODES"
 GROUP="github-demo"
 QUORUM=$(($NUM_NODES/2+1))
 
+
+
 echo "
-export AWS_ACCESS_KEY_ID=''
-export AWS_SECRET_ACCESS_KEY=''
+export AWS_ACCESS_KEY_ID=__AWS_ACCESS_KEY_ID__
+export AWS_SECRET_ACCESS_KEY=__AWS_SECRET_ACCESS_KEY__
 export CRATE_HEAP_SIZE=15g
 " >> /etc/sysconfig/crate
 
