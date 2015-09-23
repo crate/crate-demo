@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
 if [ "help" == "$1" ] ; then
-  echo "usage: ./startscript <nr-nodes> <key-name>"
+  echo "usage: ./startscript <nr-nodes> <key-name> <ami-id>"
   exit 1
 else
     NUM_NODES=$1
@@ -9,6 +9,11 @@ fi
 
 if [[ -z "$2" ]] ; then
   echo "Please specify a key-name"
+  exit 1
+fi
+
+if [[ -z "$3" ]] ; then
+  echo "Please specify an ami-id"
   exit 1
 fi
 
@@ -37,7 +42,7 @@ SECURITY_GROUP="github-demo"
 REGION="us-west-2"
 
 INSTANCE_IDS=$(bin/aws ec2 run-instances \
---image-id ami-2b7c651b \
+--image-id $3 \
 --count $NUM_NODES \
 --instance-type $INSTANCE_TYPE \
 --key-name $2 \
