@@ -35,8 +35,9 @@ def server():
 
     app = get_app(os.getcwd(), True)
     app.listen(options.port)
-    
-    LOGGER.info('Serving webapp at http://{}:{}/index.html'.format(options.host, options.port))
+
+    LOGGER.info('Serving webapp at http://{}:{}/index.html'
+                .format(options.host, options.port))
     LOGGER.debug('Press Ctrl+C to stop server')
     try:
         IOLoop.current().start()
@@ -45,4 +46,3 @@ def server():
         IOLoop.current().stop()
     finally:
         sys.exit()
-
