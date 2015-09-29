@@ -20,6 +20,6 @@ CREATE TABLE github (
     public BOOLEAN
 ) PARTITIONED BY (month_partition)
 WITH (
-    number_of_replicas = 0,
+    number_of_replicas = 1,
     refresh_interval = 0
 );

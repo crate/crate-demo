@@ -17,6 +17,13 @@ def parse_args():
     parser.add_argument('-host','--host', help='host', required=True)
     return parser.parse_args()
 
+def alter_table(cur, number_of_replicas):
+    try:
+        cur.execute("""ALTER TABLE github SET (number_of_replicas=?)""", (number_of_replicas,))
+        print("alter table to number_of_replicas={}".format(str(number_of_replicas)))
+    except Exception as e:
+        print("error on alter table \n {}".format(e))
+
 def main():
     aws_secret_key = os.environ['AWS_SECRET_ACCESS_KEY']
     aws_access_key = os.environ['AWS_ACCESS_KEY_ID']
@@ -28,7 +35,10 @@ def main():
 
     connection = client.connect(args.host)
     cur = connection.cursor()
-
+    
+    
+    alter_table(cur, 0)
+    
     for single_date in (start_date + timedelta(n) for n in range((delta_month(end_date, 1) - start_date).days)):
         import_data = single_date.strftime("%Y-%m-%d");
         month_partition = single_date.strftime("%Y-%m");
@@ -42,6 +52,8 @@ def main():
             cur.execute(cmd)
         except Exception as e:
             print("error while importing {}\n {}".format(import_data, e))
-
+    
+    alter_table(cur, 1)
+    
 if __name__=='__main__':
   main()
