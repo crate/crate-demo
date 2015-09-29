@@ -3,6 +3,7 @@
   "description": "Crate demo for visualizing data from githubarchive.org",
   "dependencies": {
     "bootstrap": "~3.3.5",
+    "components-font-awesome": "~4.4.0",
     "d3": "~3.5.6",
     "jquery": "~2.1.4"
   }

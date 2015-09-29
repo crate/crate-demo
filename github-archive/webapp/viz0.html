@@ -18,6 +18,23 @@
   <link rel="stylesheet" href="/css/crate.css" />
   <!-- custom css -->
   <link rel="stylesheet" href="/css/crate.components.css" />
+  <style>
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  .bar {
+    fill: steelblue;
+  }
+  .x.axis path {
+    display: none;
+  }
+  text {
+    font-size: 11px;
+  }
+  </style>
 </head>
 
 <body>
@@ -50,12 +67,28 @@
     <div class="wrapper wrapper-border">
       <div class="container">
         <div class="row">
+          <div class="col-sm-12">
+            <h1>Pull Request Languages</h1>
+            <div class="">
+              <div id="viz"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-sm-8">
             <div class="">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-              <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-              <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+              <pre><code>SELECT payload['pull_request']['head']['repo']['language'] AS language,
+       COUNT(*) AS num_pull_requests,
+       COUNT(DISTINCT(repo['id'])) AS num_repos
+FROM github
+WHERE type = 'PullRequestEvent'
+  AND payload['pull_request']['head']['repo']['language'] IS NOT NULL
+  AND repo['id'] IS NOT NULL
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 20;</code></pre>
+              <p><a href="#" class="btn btn-default btn-small" id="btn-viz0">SHOW</a> <span id="loader"><i class="fa fa-spinner fa-pulse"></i></span></p>
+              <p id="error" class=""></p>
             </div>
           </div>
           <div class="col-sm-4">
@@ -79,7 +112,10 @@
   </footer>
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/bower_components/d3/d3.min.js"></script>
 
+  <script src="/js/sql.js"></script>
+  <script src="/js/viz0.js"></script>
   <script src="/js/main.js"></script>
 </body>
 

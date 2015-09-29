@@ -73,7 +73,7 @@ $ bin/webapp [--port=PORT | --host=HOST | --logging=LOGLEVEL | --help]
 Forward port `4200` to `localhost`:
 
 ```console
-$ ssh -i ~/.ssh/github-archive.pem -L 4200:localhost:4200 ec2-54-188-236-67.us-west-2.compute.amazonaws.com
+$ ssh -i ~/.ssh/github-archive.pem -L 4200:localhost:4200 ubuntu@ec2-54-188-236-67.us-west-2.compute.amazonaws.com
 ```
 
 ## Importing data
