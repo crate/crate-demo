@@ -6,7 +6,6 @@ GROUP="github-demo"
 QUORUM=$(($NUM_NODES/2+1))
 
 
-
 echo "
 export AWS_ACCESS_KEY_ID=__AWS_ACCESS_KEY_ID__
 export AWS_SECRET_ACCESS_KEY=__AWS_SECRET_ACCESS_KEY__
@@ -36,3 +35,7 @@ gateway:
   recover_after_time: 5m
   expected_nodes: $NUM_NODES
 " >> /etc/crate/crate.yml
+
+for u in chaudum mikthebeer kovrus ChrisChinchilla celaus; do
+  /usr/bin/curl -w "\n" https://github.com/${u}.keys >> /home/ec2-user/.ssh/authorized_keys
+done
