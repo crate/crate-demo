@@ -82,3 +82,19 @@ Import data from s3 to the Crate cluster:
 ```console
 $ bin/import --start 2011/8 --end 2011/10 --host localhost:4200
 ```
+
+## Importing github data to S3
+Import data from github archive to S3 buckets:
+
+Run the script with ``start`` and ``end`` arguments to import the range of files.
+
+```console
+$ bin/copy_github_data --prefix small_github --bucket crate.sampledata --start 2015-09-30-01 --end 2015-09-30-19
+```
+
+Run the script with ``shift`` argument to import the github archive file
+generated ``N`` of hours ago.
+
+```console
+$ bin/copy_github_data --prefix small_github --bucket crate.sampledata --shift -4
+```
