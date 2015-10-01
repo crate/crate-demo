@@ -77,7 +77,7 @@
         <div class="row">
           <div class="col-sm-8">
             <div class="">
-              <pre><code>SELECT payload['pull_request']['head']['repo']['language'] AS language,
+              <pre id="query"><code>SELECT payload['pull_request']['head']['repo']['language'] AS language,
        COUNT(*) AS num_pull_requests,
        COUNT(DISTINCT(repo['id'])) AS num_repos
 FROM github
@@ -86,7 +86,7 @@ WHERE type = 'PullRequestEvent'
   AND repo['id'] IS NOT NULL
 GROUP BY 1
 ORDER BY 2 DESC
-LIMIT 20;</code></pre>
+LIMIT 20</code></pre>
               <p><a href="#" class="btn btn-default btn-small" id="btn-viz0">SHOW</a> <span id="loader"><i class="fa fa-spinner fa-pulse"></i></span></p>
               <p id="error" class=""></p>
             </div>
