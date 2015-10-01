@@ -18,6 +18,23 @@
   <link rel="stylesheet" href="/css/crate.css" />
   <!-- custom css -->
   <link rel="stylesheet" href="/css/crate.components.css" />
+  <style>
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  .bar {
+    fill: steelblue;
+  }
+  .x.axis path {
+    display: none;
+  }
+  text {
+    font-size: 11px;
+  }
+  </style>
 </head>
 
 <body>
@@ -50,12 +67,32 @@
     <div class="wrapper wrapper-border">
       <div class="container">
         <div class="row">
+          <div class="col-sm-12">
+            <h1>Pull Request Latencies</h1>
+            <h4>Displays the number of pull request related to their average time difference (in min) between their creation and merge.</h4>
+            <div class="">
+              <div id="viz"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-sm-8">
             <div class="">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-              <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-              <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+              <pre id="query"><code>select count(DISTINCT(repo['id'])) as cnt,
+round(avg((extract (day from (payload['pull_request']['merged_at']-payload['pull_request']['created_at']))*24*60*60+ 
+extract (hour from (payload['pull_request']['merged_at']-payload['pull_request']['created_at']))*60*60+ 
+extract (minute from (payload['pull_request']['merged_at']-payload['pull_request']['created_at']))*60+ 
+extract (second from (payload['pull_request']['merged_at']-payload['pull_request']['created_at'])))/3600)) as avg_diff, 
+date_format('CW %v', payload['pull_request']['created_at']) as created_at 
+from github 
+where payload['pull_request']['created_at'] >= '2015-01-01' 
+and payload['pull_request']['created_at'] <= '2015-06-01' 
+and payload['pull_request']['created_at'] is not null 
+and payload['pull_request']['merged_at'] is not null 
+group by created_at 
+order by created_at asc</code></pre>
+              <p><a href="#" class="btn btn-default btn-small" id="btn-viz1">SHOW</a> <span id="loader"><i class="fa fa-spinner fa-pulse"></i></span></p>
+              <p id="error" class=""></p>
             </div>
           </div>
           <div class="col-sm-4">
@@ -68,7 +105,7 @@
                 <td><a href="/viz0.html">Pull Request Languages</a></td>
               </tr>
               <tr>
-                <td><a href="/viz1.html">Pull Request Latency</a></td>
+                <td><a href="/viz1.html">Pull Request Latencies</a></td>
               </tr>
             </table>
           </div>
@@ -82,7 +119,10 @@
   </footer>
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/bower_components/d3/d3.min.js"></script>
 
+  <script src="/js/sql.js"></script>
+  <script src="/js/viz1.js"></script>
   <script src="/js/main.js"></script>
 </body>
 

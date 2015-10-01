@@ -30,5 +30,6 @@
   };
 
   $('#btn-viz0').on('click', function(e){ showPrLanguages(e); });
+  $('#btn-viz1').on('click', function(e){ showPrLatencies(e); });
 
 }(jQuery));
