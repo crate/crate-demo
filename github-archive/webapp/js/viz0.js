@@ -4,14 +4,7 @@
    *
    **/
 
-  var QUERY = "SELECT payload['pull_request']['head']['repo']['language'] AS language, " +
-              "COUNT(*) AS num_pull_requests, " +
-              "COUNT(DISTINCT(repo['id'])) AS num_repos " +
-              "FROM github " +
-              "WHERE type = 'PullRequestEvent' " +
-              "AND payload['pull_request']['head']['repo']['language'] IS NOT NULL " +
-              "AND repo['id'] IS NOT NULL " +
-              "GROUP BY 1 ORDER BY 2 DESC LIMIT 20"
+  var QUERY = $( "#query" ).text();
 
   // canvas width/height/margin
   var margin = {top: 10, right: 40, bottom: 30, left: 40},
