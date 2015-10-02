@@ -44,7 +44,7 @@ def main():
         month_partition = single_date.strftime("%Y-%m");
 
         print('Importing github data for {0} ...'.format(import_data))
-        s3_url = 's3://{}:{}@crate.sampledata/github/{}-*'.format(urllib.quote_plus(aws_access_key),
+        s3_url = 's3://{}:{}@crate.sampledata/github_archive/{}-*'.format(urllib.quote_plus(aws_access_key),
             urllib.quote_plus(aws_secret_key), import_data)
         cmd = '''COPY github PARTITION (month_partition='{}')
             FROM '{}' WITH (bulk_size=1000, compression='gzip')'''.format(month_partition, s3_url)
