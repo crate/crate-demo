@@ -2,7 +2,6 @@ CREATE TABLE github (
     type STRING,
     payload OBJECT AS (
       commits ARRAY(OBJECT AS (
-        sha STRING,
         author OBJECT,
         message STRING,
         "distinct" BOOLEAN,
@@ -12,6 +11,7 @@ CREATE TABLE github (
     repo OBJECT AS (
       id LONG
     ),
+    payload_ft STRING INDEX using fulltext,
     actor OBJECT,
     org OBJECT,
     created_at TIMESTAMP,
