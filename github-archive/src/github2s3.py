@@ -105,8 +105,9 @@ def main():
     end_date = args.end
 
     if start_date and end_date:
-        hours = (end_date - args.start).seconds // 60
-        keys = [start_date + timedelta(hours=x) for x in range(0, hours + 1)]
+        time_delta = end_date - start_date
+        delta_hours = time_delta.days * 24 + time_delta.seconds // 3600
+        keys = [start_date + timedelta(hours=x) for x in range(0, delta_hours + 1)]
         for key_name in keys:
             key = '{}.json.gz'.format(key_name.strftime("%Y-%m-%d-%-H"))
             run(bucket, prefix, key)
