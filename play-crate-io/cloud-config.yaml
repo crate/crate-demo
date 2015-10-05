@@ -5,7 +5,8 @@ coreos:
     reboot-strategy: off
   etcd:
     # generate a new token for each unique cluster from https://discovery.etcd.io/new
-    discovery: https://discovery.etcd.io/<ID>
+    # or use the result of curl -w "\n" 'https://discovery.etcd.io/new?size=8'
+    discovery: https://please/make/a/new/url
     # multi-region and multi-cloud deployments need to use $public_ipv4
     addr: $private_ipv4:4001
     peer-addr: $private_ipv4:7001
