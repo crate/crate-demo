@@ -29,7 +29,8 @@
           .attr("transform", function(d){ return "translate("+ [margin.left, margin.top] +")"; })
   };
 
-  $('#btn-viz0').on('click', function(e){ showPrLanguages(e); });
-  $('#btn-viz1').on('click', function(e){ showPrLatencies(e); });
+  $('#btn-viz0').on('click', function(e){ $("#viz").empty(); showPrLanguages(e); });
+  $('#btn-viz1').on('click', function(e){ $("#viz").empty(); showPrLatencies(e); });
+  $('#btn-viz2').on('click', function(e){ $("#viz").empty(); showCommitSentiments(e); });
 
 }(jQuery));
