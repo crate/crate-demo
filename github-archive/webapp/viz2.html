@@ -28,12 +28,44 @@
   .bar {
     fill: steelblue;
   }
+  
   .x.axis path {
     display: none;
   }
   text {
     font-size: 11px;
   }
+  
+  .d3-tip {
+    font-size: 11px;
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+  }
+
+  /* Creates a small triangle extender for the tooltip */
+  .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+  }
+  
+  /* Style northward tooltips differently */
+  .d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+
   </style>
 </head>
 
@@ -68,8 +100,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h1>Pull Request Latencies</h1>
-            <h4>Displays the number of pull request related to their average time difference (in min) between their creation and merge.</h4>
+            <h1>Commit Sentiments</h1>
+            <h4>Points out user sentiments of Github commits compared by their emotional impacts like anger and joy.</h4>
             <div class="">
               <div id="viz"></div>
             </div>
@@ -78,20 +110,38 @@
         <div class="row">
           <div class="col-sm-8">
             <div class="">
-              <pre id="query"><code>select count(DISTINCT(repo['id'])) as cnt,
-round(avg((extract (day from (payload['pull_request']['merged_at']-payload['pull_request']['created_at']))*24*60*60+ 
-extract (hour from (payload['pull_request']['merged_at']-payload['pull_request']['created_at']))*60*60+ 
-extract (minute from (payload['pull_request']['merged_at']-payload['pull_request']['created_at']))*60+ 
-extract (second from (payload['pull_request']['merged_at']-payload['pull_request']['created_at'])))/3600)) as avg_diff, 
-date_format('CW %v', payload['pull_request']['created_at']) as created_at 
+              <pre id="query1"><code>select 
+date_format('%Y-%m', date_trunc('month', created_at)) as date, 
+count(*) as cnt_pos
 from github 
-where payload['pull_request']['created_at'] >= '2015-01-01' 
-and payload['pull_request']['created_at'] <= '2015-06-01' 
-and payload['pull_request']['created_at'] is not null 
-and payload['pull_request']['merged_at'] is not null 
-group by created_at 
-order by created_at asc</code></pre>
-              <p><a href="#" class="btn btn-default btn-small" id="btn-viz1">SHOW</a> <span id="loader"><i class="fa fa-spinner fa-pulse"></i></span></p>
+where '% yes %' like any (payload['commits']['message'])
+or '% hallelujah %' like any (payload['commits']['message'])
+or '% hurray %' like any (payload['commits']['message'])
+or '% bingo %' like any (payload['commits']['message'])
+or '% amused %' like any (payload['commits']['message'])
+or '% cheerful %' like any (payload['commits']['message'])
+or '% excited %' like any (payload['commits']['message'])
+or '% glad %' like any (payload['commits']['message'])
+or '% proud %' like any (payload['commits']['message']) 
+group by date 
+order by date asc</code></pre>
+              <pre id="query2"><code>select 
+date_format('%Y-%m', date_trunc('month', created_at)) as date, 
+count(*) as cnt_neg
+from github 
+where '% a+rgh %' like any (payload['commits']['message'])
+or '% angry %' like any (payload['commits']['message'])
+or '% annoyed %' like any (payload['commits']['message'])
+or '% annoying %' like any (payload['commits']['message'])
+or '% appalled %' like any (payload['commits']['message'])
+or '% bitter %' like any (payload['commits']['message']) 
+or '% cranky %' like any (payload['commits']['message']) 
+or '% hate %' like any (payload['commits']['message']) 
+or '% hating %' like any (payload['commits']['message']) 
+or '% mad %' like any (payload['commits']['message']) 
+group by date 
+order by date asc</code></pre>
+              <p><a href="#" class="btn btn-default btn-small" id="btn-viz2">SHOW</a> <span id="loader"><i class="fa fa-spinner fa-pulse"></i></span></p>
               <p id="error" class=""></p>
             </div>
           </div>
@@ -123,9 +173,10 @@ order by created_at asc</code></pre>
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="/bower_components/d3/d3.min.js"></script>
+  <script src="/bower_components/d3-tip/index.js"></script>
 
   <script src="/js/sql.js"></script>
-  <script src="/js/viz1.js"></script>
+  <script src="/js/viz2.js"></script>
   <script src="/js/main.js"></script>
 </body>
 
