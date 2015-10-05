@@ -9,6 +9,7 @@ This setup requires `Google Cloud SDK`_ to be installed!
 
 Network/Firewall
 ................
+*Only required if deleted*
 
 Docs: `GCE Networking`_
 
@@ -33,15 +34,16 @@ Allow SSH connections and web traffic from everywhere::
 
 Disks
 .....
+*Only required if deleted*
 
 Docs: `GCE Disks`_
 
 Create ``8`` SSD disks::
 
-  $ gcloud compute disks create ssh-play{1..8} \
+  $ gcloud compute disks create ssd-play{1..8} \
       --project crate-gce \
       --type pd-ssd \
-      --zone us-central1-a \
+      --zone us-central1-b \
       --size 50GB
 
 
@@ -51,20 +53,23 @@ Instances
 Docs: `GCE Instances`_
 
 **For each unique cluster you will need to update the ``cloud-config.yaml``
-with a new discovery token that can be generated from `https://discovery.etcd.io/new`_.**
+with a new discovery token that can be generated with:**
+
+  $  curl -w "\n" 'https://discovery.etcd.io/new?size=8'
 
 Launch ``8`` instances of type ``n1-standard-8`` (``8`` cores, ``30GB`` RAM)
 with the given ``cloud-config.yml``::
 
-  $ gcloud compute instances create play{1..8} \
+  $ for i in {1..8}; do gcloud compute instances create play$i \
       --project crate-gce \
       --machine-type n1-standard-8 \
       --image coreos \
-      --zone us-central1-a \
+      --zone us-central1-b \
       --network play \
-      --disk name=... \
+      --disk name=ssd-play$i \
       --boot-disk-size 10GB \
-      --metadata-from-file user-data=cloud-config.yaml
+      --metadata-from-file user-data=cloud-config.yaml; done
+
 
 Install Crate
 -------------
@@ -89,4 +94,3 @@ Restarting automatically pulls the latest version from Docker::
 .. _`GCE Networking`: https://cloud.google.com/compute/docs/networking
 .. _`GCE Instances`: https://cloud.google.com/compute/docs/instances
 .. _`GCE Disks`: https://cloud.google.com/compute/docs/disks
-
