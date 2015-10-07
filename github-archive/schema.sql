@@ -4,21 +4,14 @@ CREATE TABLE github (
         push_event OBJECT(STRICT) AS (
             ref STRING,
             head STRING,
-            before STRING,
             size INTEGER,
             distinct_size INTEGER,
             commits ARRAY(OBJECT(STRICT) AS (
                 id STRING,
                 message STRING,
-                "distinct" BOOLEAN,
                 "timestamp" TIMESTAMP,
                 url STRING,
                 author OBJECT(STRICT) AS (
-                    name STRING,
-                    email STRING,
-                    username STRING
-                ),
-                commiter OBJECT(STRICT) AS (
                     name STRING,
                     email STRING,
                     username STRING
@@ -31,16 +24,14 @@ CREATE TABLE github (
             pull_request OBJECT(STRICT) AS (
                 url STRING,
                 id LONG,
-                title STRING,
                 body STRING,
+                title STRING,
                 created_at TIMESTAMP,
                 updated_at TIMESTAMP,
                 merged_at TIMESTAMP,
                 closed_at TIMESTAMP,
                 head OBJECT(STRICT) AS (
                     label STRING,
-                    ref STRING,
-                    sha STRING,
                     repo OBJECT(STRICT) AS (
                         id LONG,
                         name STRING,
@@ -56,20 +47,20 @@ CREATE TABLE github (
         )
     ),
     repo OBJECT(STRICT) AS (
-        id INTEGER,
+        id LONG,
         name STRING,
         url STRING
     ),
     payload_ft STRING INDEX using fulltext,
     actor OBJECT(STRICT) AS (
-        id INTEGER,
+        id LONG,
         login STRING,
         gravatar_id STRING,
         avatar_url STRING,
         url STRING
     ),
     org OBJECT(STRICT) AS (
-        id INTEGER,
+        id LONG,
         login STRING,
         gravatar_id STRING,
         avatar_url STRING,
