@@ -1,7 +1,7 @@
 ;(function($){
 
     var SQL_ENDPOINT = 'http://' + window.location.hostname + ':4200/_sql';
-
+    
     var SQLQuery = function SQLQuery(stmt, response, error) {
       this.stmt = stmt;
       this.rows = [];
@@ -77,4 +77,3 @@
     window.SQLQuery = SQLQuery;
 
 }(jQuery));
-
