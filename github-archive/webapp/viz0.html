@@ -77,16 +77,16 @@
         <div class="row">
           <div class="col-sm-8">
             <div class="">
-              <pre id="query"><code>SELECT payload['pull_request']['head']['repo']['language'] AS language,
-       COUNT(*) AS num_pull_requests,
-       COUNT(DISTINCT(repo['id'])) AS num_repos
+              <pre id="query"><code>SELECT payload['pull_request_event']['pull_request']['head']['repo']['language'] AS language,
+  COUNT(*) AS num_pull_requests,
+  COUNT(DISTINCT(repo['id'])) AS num_repos
 FROM github
 WHERE type = 'PullRequestEvent'
-  AND payload['pull_request']['head']['repo']['language'] IS NOT NULL
+  AND  payload['pull_request_event']['pull_request']['head']['repo']['language'] IS NOT NULL
   AND repo['id'] IS NOT NULL
 GROUP BY 1
 ORDER BY 2 DESC
-LIMIT 20</code></pre>
+LIMIT 10</code></pre>
               <p><a href="#" class="btn btn-default btn-small" id="btn-viz0">SHOW</a> <span id="loader"><i class="fa fa-spinner fa-pulse"></i></span></p>
               <p id="error" class=""></p>
             </div>
