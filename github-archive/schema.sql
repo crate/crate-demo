@@ -49,7 +49,17 @@ CREATE TABLE github (
     repo OBJECT(STRICT) AS (
         id LONG,
         name STRING,
-        url STRING
+        url STRING,
+        created_at TIMESTAMP,
+        pushed_at TIMESTAMP,
+        description STRING,
+        homepage STRING,
+        master_branch STRING,
+        owner STRING,
+        organization STRING,
+        language STRING,
+        size LONG,
+        stargazers LONG
     ),
     payload_ft STRING INDEX using fulltext,
     actor OBJECT(STRICT) AS (
@@ -57,7 +67,13 @@ CREATE TABLE github (
         login STRING,
         gravatar_id STRING,
         avatar_url STRING,
-        url STRING
+        url STRING,
+        email STRING,
+        company STRING,
+        blog STRING,
+        location STRING,
+        type STRING,
+        name STRING
     ),
     org OBJECT(STRICT) AS (
         id LONG,

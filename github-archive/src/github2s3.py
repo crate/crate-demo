@@ -11,7 +11,6 @@ from boto.s3.key import Key
 from boto.s3.connection import S3Connection
 from datetime import datetime, timedelta
 from multiprocessing import Pool
-
 import preprocess
 
 MAX_RETRIES = 3
@@ -124,7 +123,3 @@ def main():
         run((bucket, prefix, key))
     else:
         print('Provided arguments are not correct')
-
-if __name__=='__main__':
-    main()
-

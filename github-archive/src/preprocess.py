@@ -120,6 +120,7 @@ def preprocess_pull_request_payload(payload):
 def preprocess_repo(json_record):
     _repo = {}
     repo = json_record.get('repo', None)
+    repository = json_record.get('repository', None)
     if repo:
         if repo and repo.get('id', None):
             _repo['id'] = int(repo.get('id'))
@@ -127,10 +128,40 @@ def preprocess_repo(json_record):
             _repo['id'] = None
         _repo['name'] = repo.get('name', None)
         _repo['url'] = repo.get('url', None)
+    elif repository:
+        if repository and repository.get('id', None):
+            _repo['id'] = int(repository.get('id'))
+        else:
+            _repo['id'] = None
+
+        description = repository.get('description', '')
+        if description and utf8len(description) > 32765:
+            _repo['description'] = title[:32765]
+        else:
+            _repo['description'] = description
+
+        created_at = repository.get('created_at', None)
+        if created_at:
+            _repo['created_at'] = get_timestamp(created_at)
+
+        pushed_at = repository.get('pushed_at', None)
+        if pushed_at:
+            _repo['pushed_at'] = get_timestamp(pushed_at)
+
+        _repo['homepage']  = repository.get('homepage', None)
+        _repo['language'] = repository.get('language', None)
+        _repo['master_branch'] = repository.get('master_branch', None)
+        _repo['name'] = repository.get('name', None)
+        _repo['organization'] = repository.get('organization', None)
+        _repo['owner'] = repository.get('owner', None)
+        _repo['size'] = repository.get('size', None)
+        _repo['stargazers'] = repository.get('stargazers', None)
+        _repo['url'] = repository.get('url', None)
     return _repo
 
 def preprocess_actor(json_record):
     actor = json_record.get('actor', None)
+    actor_attributes = json_record.get('actor_attributes', None)
     _actor = {}
     if actor and isinstance(actor, str):
         _actor['login'] = actor
@@ -144,6 +175,15 @@ def preprocess_actor(json_record):
         _actor['gravatar_id'] = actor.get('gravatar_id', None)
         _actor['avatar_url'] = actor.get('avatar_url', None)
         _actor['url'] = actor.get('url', None)
+    if actor_attributes:
+        _actor['login'] = actor_attributes.get('login', None)
+        _actor['gravatar_id'] = actor_attributes.get('gravatar_id', None)
+        _actor['blog'] = actor_attributes.get('blog', None)
+        _actor['company'] = actor_attributes.get('company', None)
+        _actor['email'] = actor_attributes.get('email', None)
+        _actor['location'] = actor_attributes.get('location', None)
+        _actor['name'] = actor_attributes.get('name', None)
+        _actor['type'] = actor_attributes.get('type', None)
     return _actor
 
 def preprocess_org(json_record):
@@ -186,6 +226,9 @@ def process_record(record):
     created_at = json_record.get('created_at', None)
     if created_at:
         json_record['created_at'] = get_timestamp(created_at)
+
+    json_record.pop('repository', None)
+    json_record.pop('actor_attributes', None)
 
     if  isinstance(payload, dict):
         payload_copy = payload.copy()
