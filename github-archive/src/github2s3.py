@@ -10,6 +10,9 @@ from urllib.request import urlretrieve
 from boto.s3.key import Key
 from boto.s3.connection import S3Connection
 from datetime import datetime, timedelta
+from multiprocessing import Pool
+
+import preprocess
 
 MAX_RETRIES = 3
 
@@ -71,7 +74,8 @@ def parse_args():
 
     return parser.parse_args()
 
-def run(bucket_name, prefix_name, key_name):
+def run(params):
+    bucket_name, prefix_name, key_name = params
     s3_key_name = '{}/{}'.format(prefix_name, key_name)
     git_key_url = 'http://data.githubarchive.org/{}'.format(key_name)
     print('Processing {} to s3...'.format(s3_key_name))
@@ -88,6 +92,7 @@ def run(bucket_name, prefix_name, key_name):
         urlretrieve(git_key_url, key_name)
 
         # pre-process data
+        preprocess.process_file(key_name)
 
         retry_count = 0
         while not upload_to_s3(key_name, bucket, s3_key_name) and retry_count <= MAX_RETRIES:
@@ -103,17 +108,20 @@ def main():
     bucket = args.bucket
     start_date = args.start
     end_date = args.end
+    pool = Pool(16)
 
     if start_date and end_date:
         time_delta = end_date - start_date
         delta_hours = time_delta.days * 24 + time_delta.seconds // 3600
         keys = [start_date + timedelta(hours=x) for x in range(0, delta_hours + 1)]
-        for key_name in keys:
-            key = '{}.json.gz'.format(key_name.strftime("%Y-%m-%d-%-H"))
-            run(bucket, prefix, key)
+        params = [(bucket, prefix, '{}.json.gz'.format(k.strftime("%Y-%m-%d-%-H"))) for k in keys]
+        pool.map(run, params)
+        pool.close()
+        pool.join()
+
     elif args.shift:
         key = '{}.json.gz'.format(generate_key_name(args.shift))
-        run(bucket, prefix, key)
+        run((bucket, prefix, key))
     else:
         print('Provided arguments are not correct')
 
