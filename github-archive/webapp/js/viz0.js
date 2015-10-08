@@ -102,6 +102,7 @@
 
   showPrLanguages = function(e) {
     e.preventDefault();
+    startLoading();
     SQLQuery.execute(QUERY).success(function(res){
       var data = res.toObjectArray();
       data.map(function(o, idx){
