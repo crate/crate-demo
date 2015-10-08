@@ -34,8 +34,8 @@ ExecStart=/bin/bash -c '\
               -Des.network.publish_host=%H \
               -Des.discovery.zen.ping.unicast.hosts=$HOSTS"'
 
-ExecStop=/usr/bin/docker stop %p
-ExecStop=/usr/bin/docker rm %p
+ExecStop=/bin/bash -c "docker stop `docker ps -l | gawk '{ match($0, /([a-z0-9]+)\s+crate:latest/, res); if(length(res[1]) > 1) print res[1]}'`"
+ExecStopPost=/bin/bash -c "docker rm `docker ps -l | gawk '{ match($0, /([a-z0-9]+)\s+crate:latest/, res); if(length(res[1]) > 1) print res[1]}'`"
 
 [X-Fleet]
 Global=true
