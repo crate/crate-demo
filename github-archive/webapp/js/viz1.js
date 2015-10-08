@@ -129,6 +129,7 @@
       var data = res.toObjectArray();
       draw(data);
       finishLoading();
+      showSqlResult(res['rowCount'], res['duration']);
     }).error(function(e){
       finishLoading(e.error);
     }).always(function(res){

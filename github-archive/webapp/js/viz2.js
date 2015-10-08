@@ -131,6 +131,7 @@
         var data = res1.toObjectArray();
         draw(data);
         finishLoading();
+        showSqlResult(res1['rowCount'] + res2['rowCount'], res1['duration'] + res2['duration']);
       }).error(function(e) {
         finishLoading(e.error);
       });

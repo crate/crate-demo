@@ -18,6 +18,10 @@
     }
   };
   
+  showSqlResult = function(rowCount, duration) {
+    $("#result").html("SELECT " + rowCount + " rows in set (" + duration / 1000 + " sec)");
+  };
+  
   getCanvas = function(width, height, margin){
     return d3.select('#viz')
       .append("svg")

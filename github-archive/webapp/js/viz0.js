@@ -102,7 +102,6 @@
 
   showPrLanguages = function(e) {
     e.preventDefault();
-    startLoading();
     SQLQuery.execute(QUERY).success(function(res){
       var data = res.toObjectArray();
       data.map(function(o, idx){
@@ -111,6 +110,7 @@
       });
       draw(data);
       finishLoading();
+      showSqlResult(res['rowCount'], res['duration']);
     }).error(function(e){
       finishLoading(e.error);
     }).always(function(res){
