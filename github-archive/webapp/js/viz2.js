@@ -8,7 +8,7 @@
   var QUERY2 = $( "#query2" ).text();
   
   // canvas width/height/margin
-  var margin = {top: 10, right: 40, bottom: 30, left: 40},
+  var margin = {top: 10, right: 40, bottom: 60, left: 40},
       width = 960 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 
@@ -52,12 +52,12 @@
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis)
-      .append("text")
-        .attr("x", width/2)
-        .attr("y", 20)
-        .attr("dy", ".71em")
-        .style("text-anchor", "middle")
-        .text("Months");
+        .selectAll("text")
+          .style("text-anchor", "end")
+          .attr("dx", "-.6em")
+          .attr("dy", ".10em")
+          .attr("transform", "rotate(-65)" );
+
     svg.append("g")
         .attr("class", "y axis left-axis")
         .call(yAxisLeft)

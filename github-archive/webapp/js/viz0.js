@@ -50,7 +50,9 @@
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
+        .attr("transform", "rotate(-65)" )
         .call(xAxis);
+
     svg.append("g")
         .attr("class", "y axis left-axis")
         .call(yAxisLeft);

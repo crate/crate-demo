@@ -116,7 +116,7 @@
 FROM github
 WHERE match(payload_ft, 'yes hallelujah hurray bingo  amused cheerful excited glad proud')
   AND TYPE = 'PushEvent'
-  AND (created_at >= '2013-01-01' AND created_at <= '2013-12-31')
+  AND (created_at >= '2012-01-01' AND created_at <= '2015-09-01')
 GROUP BY date
 ORDER BY date ASC</code></pre>
               <pre id="query2"><code>SELECT date_format('%Y-%m', date_trunc('month', created_at)) AS date,
@@ -124,7 +124,7 @@ ORDER BY date ASC</code></pre>
 FROM github
 WHERE match(payload_ft, 'argh angry annoyed annoying appalled bitter cranky hate hating mad')
   AND TYPE = 'PushEvent'
-  AND (created_at >= '2013-01-01' AND created_at <= '2013-12-31')
+  AND (created_at >= '2012-01-01' AND created_at <= '2015-09-01')
 GROUP BY date
 ORDER BY date ASC</code></pre>
               <p><a href="#" class="btn btn-default btn-small" id="btn-viz2">SHOW</a> <span id="loader"><i class="fa fa-spinner fa-pulse"></i></span></p>
