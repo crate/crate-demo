@@ -33,13 +33,14 @@ function sed_replace() {
   mv $temp $targetFile
 }
 
-sed_replace "__NUM_NODES__" "$NUM_NODES" user-data.sh
-sed_replace "__AWS_ACCESS_KEY_ID__" "$AWS_ACCESS_KEY_ID" user-data.sh
-sed_replace "__AWS_SECRET_ACCESS_KEY__" "$AWS_SECRET_ACCESS_KEY" user-data.sh
+sed_replace "NUM_NODES=.*" "NUM_NODES=$NUM_NODES" user-data.sh
+sed_replace "AWS_ACCESS_KEY_ID=.*" "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" user-data.sh
+sed_replace "AWS_SECRET_ACCESS_KEY=.*" "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" user-data.sh
 
 INSTANCE_TYPE="c3.4xlarge"
 SECURITY_GROUP="github-demo"
 REGION="us-west-2"
+
 
 INSTANCE_IDS=$(bin/aws ec2 run-instances \
 --image-id $3 \
@@ -52,7 +53,7 @@ INSTANCE_IDS=$(bin/aws ec2 run-instances \
 --block-device-mappings "[{\"DeviceName\":\"/dev/sdb\",\"VirtualName\":\"ephemeral0\"},{\"DeviceName\":\"/dev/sdc\",\"VirtualName\":\"ephemeral1\"}]" \
 | jq ".Instances[].InstanceId" | tr -d '"')
 
-echo "Instances launched"
+echo "Cluster launched with $NUM_NODES nodes"
 
 bin/aws ec2 wait instance-exists --instance-ids $INSTANCE_IDS
 echo "... existing"

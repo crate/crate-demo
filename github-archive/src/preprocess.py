@@ -219,7 +219,7 @@ def process_record(record):
 
     ft = []
     get_values_from_dict(json_record, ft)
-    json_record['payload_ft'] = ' '.join(ft)
+    json_record['record_ft'] = ' '.join(ft)
     json_record['repo'] = preprocess_repo(json_record)
     json_record['actor'] = preprocess_actor(json_record)
     json_record['org'] = preprocess_org(json_record)
@@ -231,17 +231,11 @@ def process_record(record):
     json_record.pop('actor_attributes', None)
 
     if  isinstance(payload, dict):
-        payload_copy = payload.copy()
-        json_record.pop('payload', None)
-        json_record['payload'] = {}
-
         if payload_type == 'PushEvent':
-            json_record['payload']['push_event'] = preprocess_push_payload(payload_copy)
+            json_record['payload_push_event'] = preprocess_push_payload(payload)
 
         if payload_type == 'PullRequestEvent':
-            json_record['payload']['pull_request_event'] = preprocess_pull_request_payload(payload_copy)
-    else:
-        json_record['payload'] = {}
+            json_record['payload_pull_request_event'] = preprocess_pull_request_payload(payload)
 
     return json.dumps(json_record) + '\n'
 

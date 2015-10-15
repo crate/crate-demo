@@ -78,12 +78,12 @@
         <div class="row">
           <div class="col-sm-8">
             <div class="">
-              <pre id="query"><code>SELECT payload['pull_request_event']['pull_request']['head']['repo']['language'] AS language,
+              <pre id="query"><code>SELECT payload_pull_request_event['pull_request']['head']['repo']['language'] AS language,
   COUNT(*) AS num_pull_requests,
   COUNT(DISTINCT(repo['id'])) AS num_repos
 FROM github
 WHERE type = 'PullRequestEvent'
-  AND  payload['pull_request_event']['pull_request']['head']['repo']['language'] IS NOT NULL
+  AND  payload_pull_request_event['pull_request']['head']['repo']['language'] IS NOT NULL
   AND repo['id'] IS NOT NULL
 GROUP BY 1
 ORDER BY 2 DESC

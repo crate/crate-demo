@@ -72,8 +72,14 @@ $ bin/webapp [--port=PORT | --host=HOST | --logging=LOGLEVEL | --help]
 
 Forward port `4200` to `localhost`:
 
+Get a list of nodes public DNS names and use one of them in the port forwarding.
+
 ```console
-$ ssh -i ~/.ssh/github-archive.pem -L 4200:localhost:4200 ubuntu@ec2-54-188-236-67.us-west-2.compute.amazonaws.com
+bin/aws ec2 describe-instances --filters Name=tag:Name,Values=Crate-Github-Data Name=instance-state-name,Values=running
+```
+
+```console
+$ ssh -i ~/.ssh/github-archive.pem -L 4200:localhost:4200 ec2-user@public_dns_name
 ```
 
 ## Importing data
