@@ -1,47 +1,46 @@
 CREATE TABLE github (
     type STRING,
-    payload OBJECT(STRICT) AS (
-        push_event OBJECT(STRICT) AS (
-            ref STRING,
-            head STRING,
-            size INTEGER,
-            distinct_size INTEGER,
-            commits ARRAY(OBJECT(STRICT) AS (
-                id STRING,
-                message STRING,
-                "timestamp" TIMESTAMP,
-                url STRING,
-                author OBJECT(STRICT) AS (
+    payload OBJECT(ignored),
+    payload_push_event OBJECT(STRICT) AS (
+        ref STRING,
+        head STRING,
+        size INTEGER,
+        distinct_size INTEGER,
+        commits ARRAY(OBJECT(STRICT) AS (
+            id STRING,
+            message STRING,
+            "timestamp" TIMESTAMP,
+            url STRING,
+            author OBJECT(STRICT) AS (
+                name STRING,
+                email STRING,
+                username STRING
+            )
+        ))
+    ),
+    payload_pull_request_event OBJECT(STRICT) AS (
+        action STRING,
+        "number" INTEGER,
+        pull_request OBJECT(STRICT) AS (
+            url STRING,
+            id LONG,
+            body STRING,
+            title STRING,
+            created_at TIMESTAMP,
+            updated_at TIMESTAMP,
+            merged_at TIMESTAMP,
+            closed_at TIMESTAMP,
+            head OBJECT(STRICT) AS (
+                label STRING,
+                repo OBJECT(STRICT) AS (
+                    id LONG,
                     name STRING,
-                    email STRING,
-                    username STRING
-                )
-            ))
-        ),
-        pull_request_event OBJECT(STRICT) AS (
-            action STRING,
-            "number" INTEGER,
-            pull_request OBJECT(STRICT) AS (
-                url STRING,
-                id LONG,
-                body STRING,
-                title STRING,
-                created_at TIMESTAMP,
-                updated_at TIMESTAMP,
-                merged_at TIMESTAMP,
-                closed_at TIMESTAMP,
-                head OBJECT(STRICT) AS (
-                    label STRING,
-                    repo OBJECT(STRICT) AS (
-                        id LONG,
-                        name STRING,
-                        full_name STRING,
-                        language STRING,
-                        description STRING,
-                        created_at TIMESTAMP,
-                        updated_at TIMESTAMP,
-                        merged_at TIMESTAMP
-                    )
+                    full_name STRING,
+                    language STRING,
+                    description STRING,
+                    created_at TIMESTAMP,
+                    updated_at TIMESTAMP,
+                    merged_at TIMESTAMP
                 )
             )
         )
@@ -61,7 +60,7 @@ CREATE TABLE github (
         size LONG,
         stargazers LONG
     ),
-    payload_ft STRING INDEX using fulltext,
+    record_ft STRING INDEX using fulltext,
     actor OBJECT(STRICT) AS (
         id LONG,
         login STRING,
