@@ -39,9 +39,9 @@
       .scale(x0)
       .orient("bottom");
     var yAxisLeft = d3.svg.axis()
-      .scale(yL)
-      .orient("left")
-      .tickFormat(d3.format(".2s"));
+        .scale(yL)
+        .orient("left")
+        .tickFormat(d3.format(".2s"));
     var yAxisRight = d3.svg.axis()
       .scale(yR)
       .orient("right")
@@ -50,16 +50,27 @@
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
-        .attr("transform", "rotate(-65)" )
         .call(xAxis);
 
     svg.append("g")
         .attr("class", "y axis left-axis")
-        .call(yAxisLeft);
+        .call(yAxisLeft)
+      .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", -40)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Number of PR");
     svg.append("g")
         .attr("class", "y axis right-axis")
         .attr("transform", "translate(" + width + " ,0)")
-        .call(yAxisRight);
+        .call(yAxisRight)
+      .append("text")
+        .attr("transform", "rotate(-270)")
+        .attr("y", -40)
+        .attr("dy", ".71em")
+        .style("text-anchor", "start")
+        .text("PR per Repo");
 
     var lang = svg.selectAll(".lang")
         .data(data)
