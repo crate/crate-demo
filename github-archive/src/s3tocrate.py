@@ -11,6 +11,13 @@ from crate import client
 def delta_month(date, months):
     return date + timedelta(months * 365 / 12)
 
+def create_table(cur, schema_file):
+    with open (schema_file, "r") as schema:
+        try:
+            cur.execute(schema.read())
+        except Exception as e:
+            print("error on table creation\n {}".format(e))
+
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-s','--start', help='start date', required=True)
@@ -41,6 +48,7 @@ def main():
     connection = client.connect(args.host, error_trace=True)
     cur = connection.cursor()
 
+    create_table(cur, "../schema.sql")
     alter_table(cur, 0)
 
     for single_date in (start_date + timedelta(n) for n in range((delta_month(end_date, 1) - start_date).days)):

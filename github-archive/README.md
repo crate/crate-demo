@@ -84,7 +84,7 @@ $ ssh -i ~/.ssh/github-archive.pem -L 4200:localhost:4200 ec2-user@public_dns_na
 
 ## Github Data table
 The SQL query for creation of the github data table can be found in the
-``schema.sql`` file. If the port forwarding command from the previous section was apllied
+``schema.sql`` file. If the port forwarding command from the previous section was applied
 connect to the crate cluster via ``crash`` or ``Admin UI`` on ``localhost:4200`` and create the table
 using the given query.
 

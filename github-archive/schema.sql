@@ -1,4 +1,4 @@
-CREATE TABLE github (
+CREATE TABLE IF NOT EXISTS github (
     type STRING,
     payload OBJECT(ignored),
     payload_push_event OBJECT(STRICT) AS (
@@ -89,4 +89,4 @@ CREATE TABLE github (
 WITH (
     number_of_replicas = 1,
     refresh_interval = 0
-);
+)
