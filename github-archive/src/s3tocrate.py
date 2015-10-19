@@ -2,14 +2,21 @@
 
 import os
 import sys
-import urllib
 import argparse
+from urllib.parse import quote_plus
 from datetime import date, timedelta, datetime
 from crate import client
 
 
 def delta_month(date, months):
     return date + timedelta(months * 365 / 12)
+
+def create_table(cur, schema_file):
+    with open (schema_file, "r") as schema:
+        try:
+            cur.execute(schema.read())
+        except Exception as e:
+            print("error on table creation\n {}".format(e))
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -41,6 +48,7 @@ def main():
     connection = client.connect(args.host, error_trace=True)
     cur = connection.cursor()
 
+    create_table(cur, "../schema.sql")
     alter_table(cur, 0)
 
     for single_date in (start_date + timedelta(n) for n in range((delta_month(end_date, 1) - start_date).days)):
@@ -48,8 +56,8 @@ def main():
         month_partition = single_date.strftime("%Y-%m");
 
         print('Importing github data for {0} ...'.format(import_data))
-        s3_url = 's3://{}:{}@crate.sampledata/github_archive/{}-*'.format(urllib.quote_plus(aws_access_key),
-            urllib.quote_plus(aws_secret_key), import_data)
+        s3_url = 's3://{}:{}@crate.sampledata/github_archive/{}-*'.format(quote_plus(aws_access_key),
+            quote_plus(aws_secret_key), import_data)
         cmd = '''COPY github PARTITION (month_partition=?) FROM ? WITH (bulk_size=1000, compression='gzip')'''
         try:
             cur.execute(cmd, (month_partition, s3_url,))
