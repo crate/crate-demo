@@ -41,14 +41,14 @@ Set Default region name to ``us-west-2`` and leave the default output format at
 Run the following command to display the available parameters.
 
 ```console
-$ ./start-cluster.sh help
+$ ./launch.sh help
 ```
 
-If you want to start a 16-node-cluster in ``us-west-2`` with the key-name
+If you want to start a 16-node-cluster using AMI in ``us-west-2`` with the key-name
 ``github-archive`` this command will be like follows:
 
 ```console
-$ ./start-cluster.sh 16 github-archive
+$ ./launch.sh 16 github-archive ami-c1b9a0f1
 ```
 
 ### Using AWS Management Console
@@ -81,6 +81,12 @@ bin/aws ec2 describe-instances --filters Name=tag:Name,Values=Crate-Github-Data 
 ```console
 $ ssh -i ~/.ssh/github-archive.pem -L 4200:localhost:4200 ec2-user@public_dns_name
 ```
+
+## Github Data table
+The SQL query for creation of the github data table can be found in the
+``schema.sql`` file. If the port forwarding command from the previous section was apllied
+connect to the crate cluster via ``crash`` or ``Admin UI`` on ``localhost:4200`` and create the table
+using the given query.
 
 ## Importing data
 Import data from s3 to the Crate cluster:
