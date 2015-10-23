@@ -3,7 +3,11 @@
 import os
 import sys
 import argparse
-from urllib.parse import quote_plus
+try:
+    from urllib.parse import quote_plus
+except ImportError:
+    # python 2.x fallback
+    from urllib import quote_plus
 from datetime import date, timedelta, datetime
 from crate import client
 
@@ -48,7 +52,7 @@ def main():
     connection = client.connect(args.host, error_trace=True)
     cur = connection.cursor()
 
-    create_table(cur, "../schema.sql")
+    create_table(cur, os.path.join(os.path.dirname(__file__), "..", "schema.sql"))
     alter_table(cur, 0)
 
     for single_date in (start_date + timedelta(n) for n in range((delta_month(end_date, 1) - start_date).days)):
