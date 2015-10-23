@@ -55,18 +55,18 @@ def main():
     create_table(cur, os.path.join(os.path.dirname(__file__), "..", "schema.sql"))
     alter_table(cur, 0)
 
-    for single_date in (start_date + timedelta(n) for n in range((delta_month(end_date, 1) - start_date).days)):
-        import_data = single_date.strftime("%Y-%m-%d");
-        month_partition = single_date.strftime("%Y-%m");
-
-        print('Importing github data for {0} ...'.format(import_data))
-        s3_url = 's3://{}:{}@crate.sampledata/github_archive/{}-*'.format(quote_plus(aws_access_key),
-            quote_plus(aws_secret_key), import_data)
-        cmd = '''COPY github PARTITION (month_partition=?) FROM ? WITH (bulk_size=1000, compression='gzip')'''
+    diff = end_date - start_date
+    all_days = [end_date - timedelta(days=d) for d in range(diff.days)]
+    for month in set([datetime.strftime(day, '%Y-%m') for day in all_days]):
+        print('Importing Github data for {0} ...'.format(month))
+        s3_url = 's3://{0}:{1}@crate.sampledata/github_archive/{2}-*'.format(quote_plus(aws_access_key),
+            quote_plus(aws_secret_key), month)
+        print('>>> {0}'.format(s3_url))
+        cmd = '''COPY github PARTITION (month_partition=?) FROM ? WITH (compression='gzip')'''
         try:
-            cur.execute(cmd, (month_partition, s3_url,))
+            cur.execute(cmd, (month, s3_url,))
         except Exception as e:
-            print("Error while importing {}: {}".format(import_data, e))
+            print("Error while importing {}: {}".format(s3_url, e))
             print(e.error_trace)
 
     alter_table(cur, 1)
