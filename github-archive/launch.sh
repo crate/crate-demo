@@ -17,6 +17,14 @@ if [[ -z "$3" ]] ; then
   exit 1
 fi
 
+if [ ".$AWS_ACCESS_KEY_ID" = "." ] || [ ".$AWS_SECRET_ACCESS_KEY" = "." ] ; then
+    echo "Please specify an AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY\n"
+    echo "usage:"
+    echo "export AWS_ACCESS_KEY_ID=<YOUR_ACCESS_KEY_ID>"
+    echo "export AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_ACCESS_KEY>"
+    exit 1
+fi
+
 function sed_replace() {
   # require all 3 parameters
   if [ ".$1" = "." ] || [ ".$2" = "." ] || [ ".$3" = "." ] ; then
