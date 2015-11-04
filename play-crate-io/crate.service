@@ -32,6 +32,7 @@ ExecStart=/bin/bash -c '\
               -Des.indices.recovery.max_bytes_per_sec=200mb \
               -Des.multicast.enabled=false \
               -Des.network.publish_host=%H \
+              -Des.discovery.zen.minimum_master_nodes=2 \
               -Des.discovery.zen.ping.unicast.hosts=$HOSTS"'
 
 ExecStop=/bin/bash -c "docker stop `docker ps -l | gawk '{ match($0, /([a-z0-9]+)\s+crate:latest/, res); if(length(res[1]) > 1) print res[1]}'`"

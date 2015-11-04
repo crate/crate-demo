@@ -38,9 +38,9 @@ Disks
 
 Docs: `GCE Disks`_
 
-Create ``8`` SSD disks::
+Create ``3`` SSD disks::
 
-  $ gcloud compute disks create ssd-play{1..8} \
+  $ gcloud compute disks create ssd-play{1..3} \
       --project crate-gce \
       --type pd-ssd \
       --zone us-central1-b \
@@ -55,12 +55,12 @@ Docs: `GCE Instances`_
 **For each unique cluster you will need to update the ``cloud-config.yaml``
 with a new discovery token that can be generated with:**
 
-  $  curl -w "\n" 'https://discovery.etcd.io/new?size=8'
+  $  curl -w "\n" 'https://discovery.etcd.io/new?size=3'
 
-Launch ``8`` instances of type ``n1-standard-8`` (``8`` cores, ``30GB`` RAM)
+Launch ``3`` instances of type ``n1-standard-8`` (``8`` cores, ``30GB`` RAM)
 with the given ``cloud-config.yml``::
 
-  $ for i in {1..8}; do gcloud compute instances create play$i \
+  $ for i in {1..3}; do gcloud compute instances create play$i \
       --project crate-gce \
       --machine-type n1-standard-8 \
       --image coreos \

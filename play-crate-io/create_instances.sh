@@ -4,7 +4,7 @@ ZONE="us-central1-b"
 PROJECT="<PROJECT_ID>"
 NETWORK="play"
 
-for i in {1..8}
+for i in {1..3}
 do
     NODE="play${i}"
     DISK="ssd-${NODE}"

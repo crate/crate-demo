@@ -5,8 +5,8 @@ coreos:
     reboot-strategy: off
   etcd:
     # generate a new token for each unique cluster from https://discovery.etcd.io/new
-    # or use the result of curl -w "\n" 'https://discovery.etcd.io/new?size=8'
-    discovery: https://please/make/a/new/url
+    # or use the result of curl -w "\n" 'https://discovery.etcd.io/new?size=3'
+    discovery: https://discovery.etcd.io/338e29b425eeafef89debd4edb3fb7b1 
     # multi-region and multi-cloud deployments need to use $public_ipv4
     addr: $private_ipv4:4001
     peer-addr: $private_ipv4:7001
@@ -72,13 +72,18 @@ users:
     groups:
       - sudo
       - docker
-  - name: tyler
-    coreos-ssh-import-github: tbrandles
+  - name: mibe
+    coreos-ssh-import-github: mikethebeer
     groups:
       - sudo
       - docker
-  - name: spanky
-    coreos-ssh-import-github: spanktar
+  - name: ruslan
+    coreos-ssh-import-github: kovrus
+    groups:
+      - sudo
+      - docker
+  - name: claus
+    coreos-ssh-import-github: celaus
     groups:
       - sudo
       - docker
