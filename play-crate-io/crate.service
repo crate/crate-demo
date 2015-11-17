@@ -6,7 +6,7 @@ Requires=docker.service
 [Service]
 TimeoutSec=3600
 ExecStartPre=/usr/bin/mkdir -p /mnt/data1/crate
-ExecStartPre=/usr/bin/docker pull crate:latest
+ExecStartPre=/usr/bin/docker pull crate/crate:latest
 
 ExecStart=/bin/bash -c '\
     HOSTS=$(fleetctl list-machines --fields=ip --no-legend \
@@ -18,7 +18,7 @@ ExecStart=/bin/bash -c '\
         --volume /mnt/data1/crate:/data \
         --volume /tmp:/tmp \
         --env CRATE_HEAP_SIZE=16g \
-        crate:latest \
+        crate/crate:latest \
         /bin/bash -c "\
             apt-get update && apt-get install git -y && \
             cd /crate/plugins/crate-admin/_site/ && \
@@ -35,8 +35,8 @@ ExecStart=/bin/bash -c '\
               -Des.discovery.zen.minimum_master_nodes=2 \
               -Des.discovery.zen.ping.unicast.hosts=$HOSTS"'
 
-ExecStop=/bin/bash -c "docker stop `docker ps -l | gawk '{ match($0, /([a-z0-9]+)\s+crate:latest/, res); if(length(res[1]) > 1) print res[1]}'`"
-ExecStopPost=/bin/bash -c "docker rm `docker ps -l | gawk '{ match($0, /([a-z0-9]+)\s+crate:latest/, res); if(length(res[1]) > 1) print res[1]}'`"
+ExecStop=/bin/bash -c "docker stop `docker ps -l | gawk '{ match($0, /([a-z0-9]+)\s+crate\/crate:latest/, res); if(length(res[1]) > 1) print res[1]}'`"
+ExecStopPost=/bin/bash -c "docker rm `docker ps -l | gawk '{ match($0, /([a-z0-9]+)\s+crate\/crate:latest/, res); if(length(res[1]) > 1) print res[1]}'`"
 
 [X-Fleet]
 Global=true
