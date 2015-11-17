@@ -25,7 +25,7 @@ coreos:
         After=docker.service
         [Service]
         Type=oneshot
-        ExecStart=/usr/bin/docker pull crate:latest
+        ExecStart=/usr/bin/docker pull crate/crate:latest
     - name: format-data1.service
       command: start
       content: |
