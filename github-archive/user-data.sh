@@ -14,8 +14,9 @@ export CRATE_HEAP_SIZE=15g
 echo "
 cluster.name: $CLUSTER_NAME
 discovery.zen.minimum_master_nodes: $QUORUM
-
 http.cors.enabled: true
+http.cors.allow-origin: *
+es.api.enabled: true
 gateway:
   recover_after_nodes: $QUORUM
   recover_after_time: 5m
