@@ -22,14 +22,12 @@ ExecStart=/bin/bash -c '\
         /bin/bash -c "\
             apt-get update && apt-get install git -y && \
             cd /crate/plugins/crate-admin/_site/ && \
-            rm index.html && \
-            wget https://gist.githubusercontent.com/celaus/6fbdbc1118e03326a19c/raw/ab0c9fbd6bafa5d45454b7483bf158bfd54aa808/index.html && \
+            wget https://gist.githubusercontent.com/chaudum/a90a1aafa49990fdb456/raw/28f700c70994dc1b940879c11119f71e2f1e8a6d/ga.patch && \
             /crate/bin/crate \
               -Des.cluster.name=play-crate-io \
-              -Des.indices.store.throttle.max_bytes_per_sec=200mb \
-              -Des.indices.memory.index_buffer_size=30% \
-              -Des.indices.recovery.concurrent_streams=5 \
-              -Des.indices.recovery.max_bytes_per_sec=200mb \
+              -Des.indices.recovery.concurrent_streams=6 \
+              -Des.gateway.expected_nodes=3 \
+              -Des.gateway.recover_after_nodes=3 \
               -Des.multicast.enabled=false \
               -Des.network.publish_host=%H \
               -Des.discovery.zen.minimum_master_nodes=2 \
@@ -40,3 +38,4 @@ ExecStopPost=/bin/bash -c "docker rm `docker ps -l | gawk '{ match($0, /([a-z0-9
 
 [X-Fleet]
 Global=true
+
