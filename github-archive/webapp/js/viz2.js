@@ -4,8 +4,6 @@
    *
    **/
    
-  var QUERY1 = $( "#query1" ).text();
-  var QUERY2 = $( "#query2" ).text();
   
   // canvas width/height/margin
   var margin = {top: 10, right: 40, bottom: 60, left: 40},
@@ -118,6 +116,9 @@
 
   showCommitSentiments = function(e) {
     e.preventDefault();
+    var QUERY1 = $( "#query1" ).text();
+    var QUERY2 = $( "#query2" ).text();
+  
     startLoading();
     SQLQuery.execute(QUERY1).success(function(res1){
       SQLQuery.execute(QUERY2).success(function(res2) {
