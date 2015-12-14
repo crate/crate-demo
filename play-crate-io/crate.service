@@ -24,6 +24,9 @@ ExecStart=/bin/bash -c '\
             cd /crate/plugins/crate-admin/_site/ && \
             wget https://gist.githubusercontent.com/chaudum/a90a1aafa49990fdb456/raw/28f700c70994dc1b940879c11119f71e2f1e8a6d/ga.patch && \
             /crate/bin/crate \
+              -Des.http.cors.enabled=true \
+              -Des.http.cors.allow-credentials=true \
+              -Des.http.cors.allow-origin=* \
               -Des.cluster.name=play-crate-io \
               -Des.indices.recovery.concurrent_streams=6 \
               -Des.gateway.expected_nodes=3 \
@@ -38,4 +41,3 @@ ExecStopPost=/bin/bash -c "docker rm `docker ps -l | gawk '{ match($0, /([a-z0-9
 
 [X-Fleet]
 Global=true
-
