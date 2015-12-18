@@ -1,0 +1,38 @@
+<div class="col-md-12">
+  <h2>{{ page.heading }}</h2>
+  <div class="row" ng-show="query.error.msg">
+    <div class="col-md-12">
+      {{ query.error.msg }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div hljs hljs-language="sql" hljs-source="query.text[0]"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div hljs hljs-language="sql" hljs-source="query.text[1]"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5 "><span ng-show="!!query.duration">finished in {{ query.duration / 1000 }} s</span>
+    </div>
+    <div class="col-md-offset-5 col-md-2">
+      <button class="btn btn-default pull-right" ng-click="events.runQuery()" ng-disabled="query.running">
+        <i class="fa" ng-class="{'fa-spin': query.running, 'fa-cog': query.running, 'fa-play': !query.running} "></i>
+      </button>
+
+    </div>
+  </div>
+
+  <div class="row" ng-show="!!query.duration">
+    <div class="col-md-12">
+      <h2>Mentiones</h2>
+      <canvas chart-data="query.chart.data" chart-labels="query.chart.labels" chart-series="query.chart.series" chart-legend="true" class="chart chart-bar"></canvas>
+    </div>
+  </div>
+</div>

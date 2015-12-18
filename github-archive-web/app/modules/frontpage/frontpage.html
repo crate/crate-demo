@@ -1,0 +1,21 @@
+<div class="col-md-12">
+  <h1>{{ page.heading }}</h1>
+
+  <div class="row">
+    <div class="col-xs-offset-5 col-xs-2 text-center" ng-show="!!query.running">
+      <i class="fa fa-spin fa-cog"></i>
+    </div>
+    <div class="col-xs-offset-2 col-md-8" ng-hide="!!query.running">
+      <canvas chart-data="query.chart.data" chart-labels="query.chart.labels" chart-legend="true" class="chart chart-pie"></canvas>
+
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>Total of
+            {{ results.rows | number }}
+            rows</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

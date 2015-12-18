@@ -1,0 +1,7 @@
+{
+  "name": "crate.demo.github",
+  "description": "Analyzing GitHub Archive data with Crate",
+  "dependencies": {
+    "html5-boilerplate": "~5.2.0"
+  }
+}

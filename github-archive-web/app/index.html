@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="crate.demo" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Crate.IO Demo App: GitHub Archive</title>
+  <meta name="description" content="Crate.IO Demo App: GitHub Archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/main.css">
+  <script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-chart.js/0.8.8/angular-chart.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+
+  <link rel="stylesheet" href="/static/css/crate.fonts.css" />
+  <link rel="stylesheet" href="/static/css/crate.css" />
+  <link rel="stylesheet" href="/static/css/crate.components.css" />
+
+</head>
+
+<body>
+  <header class="header wrapper wrapper-border">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            <img src="/static/images/crate-logo.png" alt="crate.io" style="height:36px;" />
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="#">Github Archive Demo</a></li>
+            <li><a href="#/m/pr-latency">Pull Request Latency</a></li>
+            <li><a href="#/m/pr-languages">Pull Request Languages</a></li>
+            <li><a href="#/m/mentions">Beverage Preference</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main">
+    <!-- body -->
+    <div class="wrapper wrapper-border">
+      <div class="container">
+
+        <!--[if lt IE 7]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="row" ng-view></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="wrapper">
+    <div class="footer">
+      <center>Querying <a href="http://githubarchive.org">GitHub Archive data</a> using <a href="https://crate.io">Crate.io</a>.
+        <p>
+          <div class="" style="margin-top:20px;">
+        </p>
+      </center>
+      <center class="small">&copy; 2015 Crate Technology GmbH</center>
+      </div>
+  </footer>
+
+  <div></div>
+  </main>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-resource.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-chart.js/0.8.8/angular-chart.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-highlightjs/0.5.1/angular-highlightjs.min.js"></script>
+
+  <script src="/common/crate/crate.js"></script>
+  <script src="/modules/frontpage/frontpage.js"></script>
+  <script src="/modules/pr-languages/pr-languages.js"></script>
+  <script src="/modules/pr-latency/pr-latency.js"></script>
+  <script src="/modules/commit-sentiments/commit-sentiments.js"></script>
+
+  <script src="/app.js"></script>
+</body>
+</html>
