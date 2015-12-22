@@ -13,7 +13,7 @@
   </div>
 
   <div class="row">
-    <div class="col-md-5 "><span ng-show="!!query.duration">finished in {{ query.duration / 1000 }} s</span>
+    <div class="col-md-5 time-elapsed"><span ng-show="!!query.duration">time elapsed: {{ query.duration / 1000 }} s</span>
     </div>
     <div class="col-md-offset-5 col-md-2">
       <button class="btn btn-default pull-right" ng-click="events.runQuery()" ng-disabled="query.running">
@@ -28,6 +28,7 @@
       <canvas chart-data="query.chart[0].data" chart-labels="query.chart[0].labels" chart-legend="true" class="chart chart-doughnut"></canvas>
     </div>
     <div class="col-md-6">
+      <h2>Top 10 languages in repositories</h2>
       <canvas chart-data="query.chart[1].data" chart-labels="query.chart[1].labels" chart-series="query.chart[1].series" class="chart chart-bar"></canvas>
     </div>
   </div>

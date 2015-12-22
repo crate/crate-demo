@@ -31,7 +31,7 @@ angular.module('crate.demo.modules.pr-latency', ['ngRoute', 'chart.js', 'hljs'])
 
 .controller('PRLatencyCtrl', ["$scope", "Crate", function($scope, Crate) {
 
-  var query = "SELECT COUNT(*) AS cnt,\n AVG((payload_pull_request_event['pull_request']['merged_at'] - payload_pull_request_event['pull_request']['created_at']) / 1000.0 / 60.0 / 60.0) AS avg_diff, \ndate_format('%Y/%m', payload_pull_request_event['pull_request']['created_at']) AS created_at \nFROM github \nWHERE payload_pull_request_event['pull_request']['created_at'] >= '2012-01-01' \n  AND payload_pull_request_event['pull_request']['created_at'] <= '2015-08-31' \n  AND payload_pull_request_event['pull_request']['created_at'] IS NOT NULL \n  AND payload_pull_request_event['pull_request']['merged_at'] IS NOT NULL \nGROUP BY created_at \nORDER BY created_at ASC";
+  var query = "SELECT COUNT(*) / 1000 AS cnt,\n cast((payload_pull_request_event['pull_request']['merged_at'] - payload_pull_request_event['pull_request']['created_at']) / 1000.0 / 60.0 / 60.0  AS integer) as hours_to_merge \nFROM github \nWHERE payload_pull_request_event['pull_request']['created_at'] >= '2012-01-01' \n  AND payload_pull_request_event['pull_request']['created_at'] <= '2015-08-31' \n  AND payload_pull_request_event['pull_request']['created_at'] IS NOT NULL \n  AND payload_pull_request_event['pull_request']['merged_at'] IS NOT NULL \nGROUP BY 2 \nORDER BY 2 ASC\nLIMIT 24";
 
   var currentQuery = null;
   var chart = [];
@@ -41,17 +41,14 @@ angular.module('crate.demo.modules.pr-latency', ['ngRoute', 'chart.js', 'hljs'])
   var showResults = function(result) {
 
     var labels = result.rows.map(function(row) {
-      return row[2];
+      return row[1];
     });
     duration = result.duration;
     chart = [{
       labels: labels,
       data: [result.rows.map(function(row) {
         return row[0];
-      }), result.rows.map(function(row) {
-        return row[1];
-      })],
-      series: ['No of Pull Requests', 'Pull Request Latency']
+      })]
     }];
   };
   var showError = function(result) {
@@ -74,7 +71,7 @@ angular.module('crate.demo.modules.pr-latency', ['ngRoute', 'chart.js', 'hljs'])
 
   function refresh() {
     $scope.page = {
-      heading: 'Pull Request Languages',
+      heading: 'Pull Request Latency',
     };
 
     $scope.query = {

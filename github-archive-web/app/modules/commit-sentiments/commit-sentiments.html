@@ -19,7 +19,7 @@
   </div>
 
   <div class="row">
-    <div class="col-md-5 "><span ng-show="!!query.duration">finished in {{ query.duration / 1000 }} s</span>
+    <div class="col-md-5  time-elapsed"><span ng-show="!!query.duration">average time elapsed: {{ query.duration / 1000 }} s</span>
     </div>
     <div class="col-md-offset-5 col-md-2">
       <button class="btn btn-default pull-right" ng-click="events.runQuery()" ng-disabled="query.running">
@@ -31,7 +31,7 @@
 
   <div class="row" ng-show="!!query.duration">
     <div class="col-md-12">
-      <h2>Mentiones</h2>
+      <h2>Mentions in Commit Messages</h2>
       <canvas chart-data="query.chart.data" chart-labels="query.chart.labels" chart-series="query.chart.series" chart-legend="true" class="chart chart-bar"></canvas>
     </div>
   </div>
