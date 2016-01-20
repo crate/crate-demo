@@ -18,7 +18,7 @@ ExecStart=/bin/bash -c '\
         --volume /mnt/data1/crate:/data \
         --volume /tmp:/tmp \
         --env CRATE_HEAP_SIZE=16g \
-        crate:latest \
+        crate/crate:play \
         /bin/bash -c "\
             apt-get update && apt-get install git -y && \
             cd /crate/plugins/crate-admin/_site/ && \
