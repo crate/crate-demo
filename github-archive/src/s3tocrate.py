@@ -89,7 +89,7 @@ def main():
         s3_url = 's3://{0}:{1}@crate.sampledata/github_archive/{2}-*'.format(quote_plus(aws_access_key),
             quote_plus(aws_secret_key), month)
         print('>>> {0}'.format(s3_url))
-        cmd = '''COPY github PARTITION (month_partition=?) FROM ? WITH (compression='gzip')'''
+        cmd = '''COPY github PARTITION (month_partition=?) FROM ? WITH (compression='gzip', shared = 'true')'''
         try:
             cur.execute(cmd, (month, s3_url,))
         except Exception as e:
