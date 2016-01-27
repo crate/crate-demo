@@ -56,6 +56,7 @@ object CCPreprocessor {
 
     println(s"processing ${sourceFileNames.length} files")
     val dnsCache = new ConcurrentHashMap[String, Option[String]]()
+
     sourceFileNames.foreach(sourceFileName => {
       val p = new WETParser {
         override val source: Source = Source.fromFile(sourceFileName)
@@ -70,13 +71,11 @@ object CCPreprocessor {
         })
       }
     })
+
     pool.shutdown()
     println("Waiting ...")
     pool.awaitTermination(100, TimeUnit.DAYS)
     println("Pool terminated")
-
-    implicit val timeout = Timeout(5 days)
-    Await.ready(writer ? PoisonPill, Duration.Inf)
 
     system.terminate()
     Await.result(system.whenTerminated, Duration.Inf)
