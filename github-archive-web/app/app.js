@@ -27,6 +27,7 @@ angular.module('crate.demo', [
     'crate.demo.modules.frontpage',
     'crate.demo.modules.pr-latency',
     'crate.demo.modules.pr-languages',
+    'crate.demo.modules.gh-timeline',
     'crate.demo.modules.commit-sentiments',
   ])
   .config(['$routeProvider', function($routeProvider) {
