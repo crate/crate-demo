@@ -6,7 +6,7 @@ Requires=docker.service
 [Service]
 TimeoutSec=3600
 ExecStartPre=/usr/bin/mkdir -p /mnt/data1/crate
-ExecStartPre=/usr/bin/docker pull crate:latest
+ExecStartPre=/usr/bin/docker pull crate/crate:play
 
 ExecStart=/bin/bash -c '\
     HOSTS=$(fleetctl list-machines --fields=ip --no-legend \
