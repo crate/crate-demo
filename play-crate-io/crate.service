@@ -1,3 +1,5 @@
+# vim: ft=systemd
+
 [Unit]
 Description=crate
 After=docker.service
@@ -9,9 +11,8 @@ ExecStartPre=/usr/bin/mkdir -p /mnt/data1/crate
 ExecStartPre=/usr/bin/docker pull crate/crate:play
 
 ExecStart=/bin/bash -c '\
-    HOSTS=$(fleetctl list-machines --fields=ip --no-legend \
-                | sed "s/$/:4300/" \
-                | paste -s -d","); \
+    HOSTS=$(fleetctl list-machines --fields=ip --no-legend | sed "s/$/:4300/" | paste -s -d","); \
+    NAME=$(hostname | cut -f 1 -d .); \
     /usr/bin/docker run \
         --publish 4200:4200 \
         --publish 4300:4300 \
@@ -29,14 +30,15 @@ ExecStart=/bin/bash -c '\
               -Des.http.cors.enabled=true \
               -Des.http.cors.allow-credentials=true \
               -Des.http.cors.allow-origin=* \
+              -Des.node.name=$NAME \
               -Des.cluster.name=play-crate-io \
               -Des.indices.recovery.concurrent_streams=6 \
               -Des.gateway.expected_nodes=3 \
               -Des.gateway.recover_after_nodes=3 \
-              -Des.multicast.enabled=false \
               -Des.network.publish_host=%H \
               -Des.discovery.zen.minimum_master_nodes=2 \
               -Des.udc.enabled=false \
+              -Des.discovery.zen.ping.multicast.enabled=false \
               -Des.discovery.zen.ping.unicast.hosts=$HOSTS"'
 
 ExecStop=/bin/bash -c "docker stop play-crate-io"
