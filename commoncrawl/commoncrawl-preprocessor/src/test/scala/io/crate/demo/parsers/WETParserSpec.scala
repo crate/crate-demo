@@ -1,19 +1,11 @@
 package io.crate.demo.parsers
 
-import java.io.FileNotFoundException
-import java.net.URI
 import java.time.{ZoneId, ZonedDateTime}
-import java.util.concurrent.ConcurrentHashMap
 
-import io.crate.demo.parsers
-
-import scala.annotation.tailrec
-import scala.concurrent.Await
-import scala.io.Source
-
+import io.crate.demo.WETParser
 
 import org.scalatest._
-import scala.concurrent.duration._
+import scala.io.Source
 
 
 class WETParserSpec extends FlatSpec with Matchers {
@@ -53,29 +45,33 @@ class WETParserSpec extends FlatSpec with Matchers {
 
   def aParserFor(sourceStr: String) = new WETParser {
     override val source: Source = Source.fromString(sourceStr)
-    override val resolverCache = new ConcurrentHashMap[String, Option[String]]()
   }
 
   "A WETParser" should "parse fully WARC-Type conversation" in {
-    val parsed = aParserFor(wetExample).map(p =>p.get()).toIndexedSeq
+    val parsed = aParserFor(wetExample).map(p => p).toIndexedSeq
     parsed.size should ===(1)
     val parsedObj = parsed(0)
     parsedObj.content should ===("Hello World")
     parsedObj.contentLength should ===(11)
-    parsedObj.date should ===(ZonedDateTime.of(2015, 8, 27, 19, 33, 34, 0, ZoneId.of("Z")))
+    parsedObj.date should ===("2015-08-27T19:33:34Z")
     parsedObj.contentType should ===("text/plain")
     parsedObj.uri should ===("http://example.com/a?x=y&l=2")
+    parsedObj.domain should ===("example.com")
+    parsedObj.reverseDomain should ===("com.example")
   }
 
   "A WETParser" should "ignore any other WARC-Type" in {
     val parsed = aParserFor(wetExampleSkip + wetExample).toList
     parsed.size should ===(1)
-    val parsedObj = parsed(0).get()
+    val parsedObj = parsed(0)
     parsedObj.content should ===("Hello World")
     parsedObj.contentLength should ===(11)
-    parsedObj.date should ===(ZonedDateTime.of(2015, 8, 27, 19, 33, 34, 0, ZoneId.of("Z")))
+    parsedObj.date should ===("2015-08-27T19:33:34Z")
     parsedObj.contentType should ===("text/plain")
     parsedObj.uri should ===("http://example.com/a?x=y&l=2")
+    parsedObj.domain should ===("example.com")
+    parsedObj.reverseDomain should ===("com.example")
+
   }
 
   "A WETParser" should "use WARC/1.0 as delimiter for WET blocks" in {

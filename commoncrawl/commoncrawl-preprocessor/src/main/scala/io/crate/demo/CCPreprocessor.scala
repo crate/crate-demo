@@ -1,85 +1,89 @@
 package io.crate.demo
 
-import java.io.{File, PrintWriter}
-import java.util.concurrent.{ConcurrentHashMap, TimeUnit, ExecutorService, Executors}
-
-import akka.actor._
-import akka.util.Timeout
-
-import io.crate.demo.common.Page
-import io.crate.demo.parsers.WETParser
-
-import scala.concurrent.Await
-import akka.pattern.ask
-
-import scala.concurrent.duration._
+import scala.collection.mutable.ListBuffer
 
 import scala.io.Source
-import argonaut._, Argonaut._
-import io.crate.demo.printers.JsonCodecs._
+import upickle.default._
 
 
-class PageJSONWriterActor(outFile: File) extends Actor {
+case class Page(uri: String, domain: String, reverseDomain: String, date: String, contentType: String, contentLength: Long, content: String)
 
-  val writer = new PrintWriter(outFile)
-  var count = 0
 
-  def receive = {
-    case p: Page => writer.println(p.asJson); count += 1
-    case j: Json => writer.println(j); count += 1
-    case s: String => writer.println(s.asJson); count += 1
-    case _ => println("this is strange")
+trait WETParser extends Iterator[Page] {
+  val _NL = "\r\n"
+
+  val source: Source
+
+  lazy val linesIterator = source.getLines()
+
+  val blockDelimiter = "WARC/1.0"
+
+  val metaData = ""
+
+  private def valueOf(src: String) = src.splitAt(src.indexOf(':') + 1)._2.trim
+
+  private def nextUntil(f: String => Boolean): Option[String] = {
+    while (linesIterator.hasNext) {
+      val current = linesIterator.next()
+      if (f(current)) return Option(current)
+    }
+    return None
   }
 
-  override def postStop() = {
-    writer.flush()
-    writer.close()
-    println(s"$count documents processed")
+  private def getUntil(f: String => Boolean): String = {
+    val result = new ListBuffer[String]()
+    while (linesIterator.hasNext) {
+      val current = linesIterator.next()
+      if (f(current)) return result.mkString(_NL)
+      result append current
+    }
+    return result.mkString(_NL)
   }
+
+
+  private def parseOne(): Option[Page] = {
+    while (hasNext) {
+      val warcType = valueOf(nextUntil(_ != blockDelimiter).get)
+
+      if (warcType.compareToIgnoreCase("conversion") == 0) {
+        val uri = valueOf(nextUntil(_.startsWith("WARC-Target-URI:")).get)
+        val zonedDate = valueOf(nextUntil(_.startsWith("WARC-Date:")).get)
+        val contentType = valueOf(nextUntil(_.startsWith("Content-Type:")).get)
+        val contentLength = valueOf(nextUntil(_.startsWith("Content-Length:")).get).toLong
+        linesIterator.next()
+
+        val content = getUntil(_ == blockDelimiter)
+        val domain = uri.split('/')(2)
+        val reverseDomain = domain.split('.').reverse.mkString(".")
+
+        return Option(new Page(uri, domain, reverseDomain, zonedDate, contentType, contentLength, content))
+      }
+    }
+    return Option.empty
+  }
+
+  override def hasNext: Boolean = linesIterator.hasNext
+
+  override def next(): Page = parseOne().getOrElse({
+    source.close()
+    throw new Exception("No more items")
+  })
+
+  def all = this.toVector
 }
 
 
 object CCPreprocessor {
-  val pool: ExecutorService = Executors.newFixedThreadPool(100)
-
 
   def main(args: Array[String]): Unit = {
-    val t0 = System.nanoTime()
-    preprocess(args(0), args.drop(1).toVector)
-    val t1 = System.nanoTime()
-    println(s"Elapsed time: ${(t1 - t0) / 1000000000.0}s")
+    val sourceFileName = args(0)
+
+    val p = new WETParser {
+      override val source: Source = Source.fromFile(sourceFileName)
+    }
+
+    val allItems = p
+    allItems.foreach(p => println(write(p)))
   }
-
-  def preprocess(resultFileName: String, sourceFileNames: Vector[String]) = {
-    val system = ActorSystem("WriterSystem")
-    val writer = system.actorOf(Props(new PageJSONWriterActor(new File(resultFileName))), name = "writer")
-
-    println(s"processing ${sourceFileNames.length} files")
-    val dnsCache = new ConcurrentHashMap[String, Option[String]]()
-
-    sourceFileNames.foreach(sourceFileName => {
-      val p = new WETParser {
-        override val source: Source = Source.fromFile(sourceFileName)
-        override val resolverCache = dnsCache
-      }
-      val allItems = p //.toVector.par
-
-
-      for {f <- allItems}  {
-        pool.execute(new Runnable {
-          override def run(): Unit = {writer ! f.get().asJson}
-        })
-      }
-    })
-
-    pool.shutdown()
-    println("Waiting ...")
-    pool.awaitTermination(100, TimeUnit.DAYS)
-    println("Pool terminated")
-
-    system.terminate()
-    Await.result(system.whenTerminated, Duration.Inf)
-  }
-
 }
 
