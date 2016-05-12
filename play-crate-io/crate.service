@@ -21,8 +21,9 @@ ExecStart=/bin/bash -c '\
         --env CRATE_HEAP_SIZE=16g \
         --name play-crate-io \
         crate/crate:play \
-        /bin/bash -c "\
-            apt-get update && apt-get install git -y && \
+        /bin/sh -c "\
+            set -ex && \
+            apk add --no-cache --virtual .patch-deps git wget && \
             cd /crate/ && \
             wget https://gist.githubusercontent.com/celaus/2d981a3ca3e0211714af/raw/4f31f1d229bc1ac3ab3beeb297002bff7e9dc661/ga.patch && \
             git apply --ignore-space-change --ignore-whitespace ga.patch && \
