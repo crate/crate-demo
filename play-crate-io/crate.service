@@ -27,7 +27,8 @@ ExecStart=/bin/bash -c '\
             cd /crate/ && \
             wget https://gist.githubusercontent.com/celaus/2d981a3ca3e0211714af/raw/4f31f1d229bc1ac3ab3beeb297002bff7e9dc661/ga.patch && \
             git apply --ignore-space-change --ignore-whitespace ga.patch && \
-            /crate/bin/crate \
+            chown -R crate:crate /data && \
+            /docker-entrypoint.sh crate \
               -Des.http.cors.enabled=true \
               -Des.http.cors.allow-credentials=true \
               -Des.http.cors.allow-origin=* \
