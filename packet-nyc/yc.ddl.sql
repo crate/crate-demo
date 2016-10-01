@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS "doc"."nyc-yellowcab" (
+   "dropoff" GEO_POINT,
+   "dropoff_datetime" TIMESTAMP,
+   "dropoff_latitude" DOUBLE,
+   "dropoff_longitude" DOUBLE,
+   "extra" STRING,
+   "fare_amount" DOUBLE,
+   "improvement_surcharge" DOUBLE,
+   "month" STRING GENERATED ALWAYS AS date_format('%Y-%c', "pickup_datetime"),
+   "mta_tax" STRING,
+   "passenger_count" long,
+   "payment_type" STRING,
+   "pickup" GEO_POINT,
+   "pickup_datetime" TIMESTAMP,
+   "pickup_latitude" DOUBLE,
+   "pickup_longitude" DOUBLE,
+   "rate_code" STRING,
+   "ratecodeid" STRING,
+   "store_and_forward" STRING,
+   "store_and_fwd_flag" STRING,
+   "surcharge" DOUBLE,
+   "tip_amount" DOUBLE,
+   "tolls_amount" DOUBLE,
+   "total_amount" DOUBLE,
+   "trip_distance" DOUBLE,
+   "trip_distance_km" DOUBLE GENERATED ALWAYS AS ("trip_distance" * 1.60934),
+   "vendor_name" STRING,
+   "vendorid" STRING
+)
+CLUSTERED INTO 12 SHARDS
+PARTITIONED BY ("month");
