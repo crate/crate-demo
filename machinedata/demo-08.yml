@@ -7,3 +7,5 @@ services:
     extends:
       service: spark-worker
       file: services.inc.yml
+    environment:
+      SPARK_LOCAL_IP: 10.81.0.13
