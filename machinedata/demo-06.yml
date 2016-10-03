@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  kafka-3:
+    container_name: kafka-3
+    extends:
+      service: kafka
+      file: services.inc.yml
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: demo-06

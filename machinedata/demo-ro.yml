@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  spark-master:
+    container_name: spark-master
+    hostname: demo-ro
+    extends:
+      service: spark-master
+      file: services.inc.yml

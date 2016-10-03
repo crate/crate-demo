@@ -1,10 +1,10 @@
 version: '2'
 
 services:
-  zookeeper-1:
-    container_name: zookeeper-1
+  zookeeper-3:
+    container_name: zookeeper-3
     extends:
       service: zookeeper
       file: services.inc.yml
     environment:
-      ZOO_MY_ID: 1
+      ZOO_MY_ID: 3
