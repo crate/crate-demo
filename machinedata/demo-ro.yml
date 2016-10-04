@@ -7,3 +7,6 @@ services:
     extends:
       service: spark-master
       file: services.inc.yml
+    environment:
+      SPARK_PUBLIC_DNS: demo-ro
+      SPARK_MASTER_IP: 10.81.0.21

@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  spark-master:
+  spark-2:
     container_name: spark-2
     hostname: demo-08
     extends:
@@ -9,3 +9,4 @@ services:
       file: services.inc.yml
     environment:
       SPARK_LOCAL_IP: 10.81.0.13
+      SPARK_PUBLIC_DNS: demo-08
