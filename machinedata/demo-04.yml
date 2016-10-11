@@ -8,3 +8,4 @@ services:
       file: services.inc.yml
     environment:
       KAFKA_ADVERTISED_HOST_NAME: demo-04
+      KAFKA_BROKER_ID: 1

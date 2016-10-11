@@ -5,24 +5,27 @@ services:
     image: zookeeper
     restart: always
     ports:
-      - "2181"
-      - "2888"
-      - "3888"
+      - "2181:2181"
+      - "2888:2888"
+      - "3888:3888"
     network_mode: host
     environment:
       #ZOO_MY_ID: 0
       ZOO_SERVERS: server.1=demo-01:2888:3888 server.2=demo-02:2888:3888 server.3=demo-03:2888:3888
 
   kafka:
-    image: wurstmeister/kafka
+    image: ches/kafka
     ports:
-      - "9092"
+      - "9092:9092"
+      - "7203:7203"
     environment:
       #KAFKA_ADVERTISED_HOST_NAME: 192.168.99.100
-      KAFKA_ZOOKEEPER_CONNECT: demo-01:2181,demo-02:2181,demo-03:2181
-      KAFKA_AUTO_LEADER_REBALANCE_ENABLE: 'true'
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      ZOOKEEPER_CONNECTION_STRING: demo-01:2181,demo-02:2181,demo-03:2181
+      #KAFKA_AUTO_LEADER_REBALANCE_ENABLE: 'true'
+      #JMX_PORT: "9999"
+      #KAFKA_JMX_OPTS: -Dcom.sun.management.jmxremote.rmi.port=7203
+    #volumes:
+      #- /var/run/docker.sock:/var/run/docker.sock
 
   spark-master:
     image: gettyimages/spark

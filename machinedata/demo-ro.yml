@@ -10,3 +10,20 @@ services:
     environment:
       SPARK_PUBLIC_DNS: demo-ro
       SPARK_MASTER_IP: 10.81.0.21
+
+  kafka-manager:
+    container_name: kafka-manager
+    image: sheepkiller/kafka-manager
+    ports:
+      - "9000:9000"
+    environment:
+      ZK_HOSTS: demo-01:2181,demo-02:2181,demo-03:2181
+      #JMX_PORT: "7203"
+
+  zookeeper-web:
+    container_name: zookeeper-web
+    image: tobilg/zookeeper-webui
+    ports:
+      - "8081:8080"
+    environment:
+      ZK_DEFAULT_NODE: demo-01:2181
