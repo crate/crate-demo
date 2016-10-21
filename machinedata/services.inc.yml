@@ -1,6 +1,14 @@
 version: '2'
 
 services:
+  mosquitto:
+    image: machinedata/mosquitto
+    ports:
+      - "1881:1881"
+    network_mode: host
+    volumes:
+      - ./mosquitto/data:/data
+
   zookeeper:
     image: zookeeper
     restart: always
