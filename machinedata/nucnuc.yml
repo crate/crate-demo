@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  node-red-1:
+    container_name: node-red-1
+    extends:
+      service: node-red
+      file: services.inc.yml
