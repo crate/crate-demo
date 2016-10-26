@@ -88,7 +88,7 @@ Restarting automatically pulls the latest version from Docker::
   $ fleetctl stop crate.service
   $ fleetctl start crate.service
   
-The easiest way to access it directly is over ``GCE Web Console``. 
+The easiest way to access it directly is over `GCE Web Console`_. 
 
 
 .. _`Google Cloud SDK`: https://cloud.google.com/sdk/
