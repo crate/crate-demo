@@ -79,6 +79,8 @@ Upload service file (``crate.service``) to one of the nodes.
 Since it is a global service, you can simply run ``fleetctl start``::
 
   $ fleetctl start crate.service
+  
+The easiest way to access it directly is over ``GCE Web Console``. 
 
 
 Update Cluster
@@ -94,3 +96,4 @@ Restarting automatically pulls the latest version from Docker::
 .. _`GCE Networking`: https://cloud.google.com/compute/docs/networking
 .. _`GCE Instances`: https://cloud.google.com/compute/docs/instances
 .. _`GCE Disks`: https://cloud.google.com/compute/docs/disks
+.. _`GCE Web Console`: https://console.cloud.google.com/compute/instances?project=crate-gce
