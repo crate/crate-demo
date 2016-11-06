@@ -1,8 +1,0 @@
-version: '2'
-
-services:
-  mosquitto-1:
-    container_name: mosquitto-1
-    extends:
-      service: mosquitto
-      file: services.inc.yml

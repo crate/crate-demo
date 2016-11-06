@@ -2,14 +2,7 @@ version: '2'
 
 services:
   mosquitto:
-    build: .
-    image: machine-data/mosquitto
-    ports:
-      - "1883:1883"
-      - "9001:9001"
-    #environment:
-    #  MOSQUITTO_LOG_DEST: "stdout"
-    #  MOSQUITTO_PERSISTENCE_LOCATION: "/data"
-    volumes:
-    #  - ./mosquitto.conf:/config/mosquitto.conf
-      - ./mosquitto/data:/data
+    container_name: mosquitto
+    extends:
+      service: mosquitto
+      file: services.inc.yml
