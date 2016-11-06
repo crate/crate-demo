@@ -1,6 +1,22 @@
 version: '2'
 
 services:
+  node-red:
+    image: machinedata/node-red
+    ports:
+      - "1880:1880"
+    network_mode: host
+    volumes:
+      - ./node-red/data:/data
+
+  mosquitto:
+    image: machinedata/mosquitto
+    ports:
+      - "1881:1881"
+    network_mode: host
+    volumes:
+      - ./mosquitto/data:/data
+
   zookeeper:
     image: zookeeper
     restart: always
