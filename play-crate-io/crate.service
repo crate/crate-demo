@@ -16,17 +16,13 @@ ExecStart=/bin/bash -c '\
     /usr/bin/docker run \
         --publish 4200:4200 \
         --publish 4300:4300 \
+        --publish 5432:5432 \
         --volume /mnt/data1/crate:/data \
         --volume /tmp:/tmp \
         --env CRATE_HEAP_SIZE=16g \
         --name play-crate-io \
         crate/crate:play \
         /bin/sh -c "\
-            set -ex && \
-            apk add --no-cache --virtual .patch-deps git wget && \
-            cd /crate/ && \
-            wget https://gist.githubusercontent.com/celaus/2d981a3ca3e0211714af/raw/4f31f1d229bc1ac3ab3beeb297002bff7e9dc661/ga.patch && \
-            git apply --ignore-space-change --ignore-whitespace ga.patch && \
             chown -R crate:crate /data && \
             /docker-entrypoint.sh crate \
               -Des.http.cors.enabled=true \
