@@ -14,3 +14,5 @@ select avg(cast(passenger_count as integer)) from "nyc-yellowcab";
 select passenger_count, avg(tip_amount) from "nyc-yellowcab" where tip_amount > 0 group by passenger_count order by 1;
 
 select passenger_count, count(*) from "nyc-yellowcab" group by passenger_count order by 1;
+
+select pickup_longitude, pickup_latitude, count(*) from "nyc-yellowcab"  group by 1, 2 order by 3 limit 5;
