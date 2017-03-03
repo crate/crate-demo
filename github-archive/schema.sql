@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS github (
         distinct_size INTEGER,
         commits ARRAY(OBJECT(STRICT) AS (
             id STRING,
-            message STRING,
+            message STRING INDEX using fulltext,
             "timestamp" TIMESTAMP,
             url STRING,
             author OBJECT(STRICT) AS (
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS github (
         pull_request OBJECT(STRICT) AS (
             url STRING,
             id LONG,
-            body STRING,
+            body STRING INDEX using fulltext,
             title STRING,
             created_at TIMESTAMP,
             updated_at TIMESTAMP,
