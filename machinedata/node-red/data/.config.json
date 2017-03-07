@@ -431,6 +431,24 @@
      "file": "/node-red-0.15.1/node_modules/node-red-node-twitter/27-twitter.js"
     }
    }
+  },
+  "node-red-contrib-postgres": {
+   "name": "node-red-contrib-postgres",
+   "version": "0.5.1",
+   "local": true,
+   "nodes": {
+    "PostgreSql": {
+     "name": "PostgreSql",
+     "types": [
+      "postgresdb",
+      "postgres"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-postgres",
+     "file": "/data/node_modules/node-red-contrib-postgres/postgres.js"
+    }
+   }
   }
  },
  "_credentialSecret": "d4384fbf6672a03cada8f0a4f87af97fe4c0d461c7ecf6085f76eee25ff6c1a3"
