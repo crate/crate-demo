@@ -1,0 +1,24 @@
+[camera]
+framerate = 32
+width = 1088
+height = 720
+mark_faces = true
+
+[haarcascades]
+scale_factor = 1.1
+min_neighbors = 3
+min_size = [30, 30]
+
+[eden-server]
+secret = "asdf"
+endpoint = "http://{{ hostvars[groups['eden-server'][0]]['ansible_host']}}:6200/data"
+batch_size = 10
+
+[mjpeg-server]
+host = "0.0.0.0"
+port = 12345
+enable = true
+
+[agent]
+name = "{{inventory_hostname}}" # A device identifier
+role = "{{role}}"

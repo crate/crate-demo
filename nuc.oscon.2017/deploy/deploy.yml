@@ -1,0 +1,85 @@
+- name: Prepare Docker swarm
+  hosts: host-nodes
+  tasks:
+  - name: Install dependencies
+    package: name={{item}} state=latest
+    with_items:
+      - python-docker-py
+  - name: Add Docker repo
+    yum_repository:
+      name: docker-ce
+      description: Docker-CE repository
+      baseurl: https://download.docker.com/linux/centos/7/$basearch/edge
+      gpgkey: https://download.docker.com/linux/centos/gpg
+      gpgcheck: yes
+  - name: Install Docker CE
+    package: name=docker-ce state=latest
+  - name: Start Docker
+    service:
+      name: docker
+      state: started
+
+- name: Prepare Eden Server config
+  hosts: eden-server
+  tasks:
+  - name: Create data folder
+    file:
+      path: /srv/data
+      state: directory
+      mode: 0755
+  - name: Create apps folder
+    file:
+      path: /srv/apps
+      state: directory
+      mode: 0755
+  - name: Create CrateDB data folder
+    file:
+      path: /srv/data/crate
+      state: directory
+      mode: 0755
+  - name: Create Eden-server config folder
+    file:
+      path: /srv/apps/eden
+      state: directory
+      mode: 0755
+  - name: Install the Eden-server config
+    template: src=server.config.toml.j2 dest=/srv/apps/eden/config.toml
+- name: Prepare Eden client config
+  hosts: eden-client
+  become: true
+  tasks:
+  - name: Set hostname
+    hostname: name={{ansible_hostname}}
+  - name: Create apps folder
+    file:
+      path: /srv/apps
+      state: directory
+      mode: 0755
+  - name: Create Eden config folder
+    file:
+      path: /srv/apps/eden
+      state: directory
+      mode: 0755
+  - name: Install the Eden client config
+    template: src=client.config.toml.j2 dest=/srv/apps/eden/config.toml
+  - name: Start pi-facetracker container
+    docker_container:
+      name: cratedb
+      image: crate/pi-facetracker:arm
+      pull: true
+      recreate: yes
+      restart_policy: unless-stopped
+      state: started
+      published_ports:
+      - "12345:12345"
+      devices:
+      - /dev/vchiq:/dev/vchiq
+      volumes:
+      - /srv/apps/eden/config.toml:/eden/config.toml
+- name: Prepare Docker swarm
+  hosts: docker-swarm-masters
+  tasks:
+  - name: Install the docker-stack.yml
+    template: src=docker-stack.yml.j2 dest=/root/docker-stack.yml
+  - name: Deploy stack
+    shell: docker stack deploy -c /root/docker-stack.yml oscon

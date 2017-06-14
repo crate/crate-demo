@@ -1,0 +1,44 @@
+version: '3.2'
+services:
+  cratedb:
+    image: "crate/crate:2.0.1" 
+    environment:
+      - CRATE_HEAP_SIZE={{ ((ram // 2) > 31) | ternary(32, ram // 2) }}g
+    command: ["crate", "-Cgateway.expected_nodes={{ groups['host-nodes'] | length }}", "-Cgateway.recover_after_nodes={{ (groups['host-nodes'] | length) // 2 + 1 }}", "-Cdiscovery.zen.minimum_master_nodes={{ (groups['host-nodes'] | length) // 2 + 1 }}", "-Cdiscovery.zen.ping.unicast.hosts=cratedb", "-Ccluster.name=OSCON", "-Cnetwork.host=_site_"]
+    volumes:
+     - /srv/data/crate:/data
+    deploy:
+      mode: global
+      endpoint_mode: dnsrr
+      placement:
+        constraints:
+        - node.labels.t == nuc
+
+  granafa:
+    image: "grafana/grafana:latest"
+    ports:
+     - "3000:3000"
+    environment:
+     - GF_INSTALL_PLUGINS=crate-datasource
+    volumes:
+    - /tmp:/var/log/grafana
+    deploy:
+      mode: replicated
+      placement:
+        constraints:
+        - node.labels.t == nuc
+
+
+  eden_server:
+    image: "clma/eden-server:latest"
+    depends_on:
+     - cratedb
+    ports:
+     - "6200:6200"
+    volumes:
+     - /srv/apps/eden/config.toml:/eden/config.toml
+    deploy:
+      mode: global
+      placement:
+        constraints:
+          - node.labels.t == nuc
