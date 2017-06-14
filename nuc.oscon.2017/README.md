@@ -31,7 +31,8 @@ On the server, there are two components to be installed: [CrateDB](https://crate
 
 Run this:
 ```
-ansible-playbook -i inventory deploy.yml```
+ansible-playbook -i inventory deploy.yml
+```
 
 This will install Docker on the server, create various configs, and place (and run) a `docker-compose.yml` in home directory of `root`. On the provided Raspberry Pi addresses this script will do similar things: Create configs/directories but also pull and start the [crate/pi-facetracker:arm](https://hub.docker.com/r/crate/pi-facetracker) Docker container from the Docker Hub.
 
