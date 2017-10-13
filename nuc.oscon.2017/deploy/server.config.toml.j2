@@ -1,0 +1,16 @@
+[keys]
+secret = "asdf"
+
+[http]
+listen_address = "0.0.0.0:6200"
+
+[cratedb]
+url = "http://cratedb:4200"
+bulk_size = 10
+create_statement = "create table if not exists sensor(ts timestamp, data object, meta object, month as date_trunc('month', ts)) partitioned by (month)" # the create table statement. use your own ;)
+insert_statement = "insert into sensor(ts, data, meta) values(?,?,?)" # the insert statement. should match the table schema ...
+{% for pi in groups['eden-client'] %}
+[[acls]]
+name = "{{ pi }}"
+roles = ["{{ hostvars[pi]['role'] }}"]
+{% endfor %}

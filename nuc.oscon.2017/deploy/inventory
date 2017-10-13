@@ -1,0 +1,20 @@
+[host-nodes]
+nuc-ber-1 ansible_host=192.168.0.11 ansible_user=root ram=8
+nuc-ber-2 ansible_host=192.168.0.12 ansible_user=root ram=8
+nuc-ber-3 ansible_host=192.168.0.13 ansible_user=root ram=8
+nuc-ber-4 ansible_host=192.168.0.14 ansible_user=root ram=8
+
+[eden-server]
+nuc-ber-1 ansible_host=192.168.0.11 ansible_user=root ram=8
+nuc-ber-2 ansible_host=192.168.0.12 ansible_user=root ram=8
+nuc-ber-3 ansible_host=192.168.0.13 ansible_user=root ram=8
+nuc-ber-4 ansible_host=192.168.0.14 ansible_user=root ram=8
+
+[eden-client]
+pi-ber-1 ansible_host=192.168.0.21 ansible_user=pirate role=camera10
+pi-ber-2 ansible_host=192.168.0.22 ansible_user=pirate role=camera3
+pi-ber-3 ansible_host=192.168.0.23 ansible_user=pirate role=cameraT
+
+
+[docker-swarm-masters]
+nuc-ber-1 ansible_host=192.168.0.11 ansible_user=root
